@@ -25,7 +25,7 @@ window.addEventListener("scroll",scrollCheck);
 goToTop.addEventListener("click",moveTop);
 
 /*********** best movie click ***********/
-
+/* 
 const bestMovie = document.querySelectorAll(".best-movie-img_box");
 
 const overView = (event) => {
@@ -40,4 +40,4 @@ const overView = (event) => {
 
 for(let i = 0; i < bestMovie.length; i++) {
   bestMovie[i].addEventListener("click",overView);
-}
+} */

@@ -116,14 +116,29 @@
     <h2 class="blind">광고영역</h2>
     <div class="slider">
       <ul class="slider-pagination">
-        <li id="slider-value1" class="active" data-value="1">01</li>
-        <li id="slider-value2" data-value="2">02</li>
-        <li id="slider-value3" data-value="3">03</li>
+        <li id="slider-value1" class="active" data-value="1">
+          <span>01</span>
+          <div class="pagination-title">
+            칸영화제 12분간의 기립박수<span class="block">엘비스</span>
+          </div>
+        </li>
+        <li id="slider-value2" data-value="2">
+          <span>02</span>
+          <div class="pagination-title">
+            칸영화제 12분간의 기립박수<span class="block">엘비스</span>
+          </div>
+        </li>
+        <li id="slider-value3" data-value="3">
+          <span>03</span>
+          <div class="pagination-title">
+            칸영화제 12분간의 기립박수<span class="block">엘비스</span>
+          </div>
+        </li>
       </ul>
       <ul class="slider-wrap" data-position="0">
-        <li><img src="./images/m_banner_1.png" alt="엘비스"></li>
-        <li><img src="https://via.placeholder.com/700x700/CD942D/999?text=img2" alt="img2"></li>
-        <li><img src="https://via.placeholder.com/700x700/CD942D/999?text=img3" alt="img3"></li>
+        <li><a href="#"><span class="blind">엘비스</span></a></li>
+        <li><a href="#"><span class="blind">main2</span></a></li>
+        <li><a href="#"><span class="blind">main3</span></a></li>
       </ul>
     </div>
   </article>
@@ -159,7 +174,6 @@
               <button class="like"><span class="blind">좋아요</span></button>
             </div>
           </div>
-          
           <h3 class="best_movie-tit"><a href="#">토르: 러브 앤 썬더</a></h3>
           <p>예매율 18.5%</p>
           <span class="best_movie-sub_txt d_day">d-5</span>
@@ -177,7 +191,24 @@
           <p>예매율 15.4%</p>
           <span class="best_movie-sub_txt star">9.5</span>
         </div>
+        <div class="best_movie-content">
+          <div class="best-movie-img_box">
+            <img src="./images/18651_101_1.jpg" alt="헤어질 결심">
+            <div class="best-movie-img_box-over">
+              <a href="#" class="ticketing">예매하기</a>
+              <a href="#" class="movie_more">상세보기</a>
+              <button class="like"><span class="blind">좋아요</span></button>
+            </div>
+          </div>
+          <h3 class="best_movie-tit"><a href="#">헤어질 결심</a></h3>
+          <p>예매율 15.4%</p>
+          <span class="best_movie-sub_txt star">9.5</span>
+        </div>
       </div>
+      <ul class="main-pagination">
+        <li></li>
+        <li></li>
+      </ul>
     </section>
     <!-- 시사회/무대인사 -->
     <section id="preview">
@@ -218,12 +249,16 @@
               <p>롯데시네마와 함께하는 '마녀2' 흥행 감사 앵콜 무대인사! 박훈정 감독, 신시아,서은수, 저스틴하비,채원빈,서이라,정라엘, 김기해와 함께하는 특별한 시간이 여러분을 찾아옵니다.</p>
               <a href="#" class="ghost_btn">예매하기</a>
             </div>
-            <div class="preview-arrow">
-              <div class="preview-prev"><span class="blind">이전</span></div>
-              <div class="preview-next"><span class="blind">다음</span></div>
-            </div>
+          </div>
+          <div class="preview-arrow">
+            <div class="preview-prev"><span class="blind">이전</span></div>
+            <div class="preview-next"><span class="blind">다음</span></div>
           </div>
         </li>
+      </ul>
+      <ul class="main-pagination">
+        <li></li>
+        <li></li>
       </ul>
     </section>
     <!-- 상영예정작 -->
@@ -269,6 +304,10 @@
           <a href="#" class="more">상세보기</a>
         </div>
       </div>
+      <ul class="main-pagination">
+        <li></li>
+        <li></li>
+      </ul>
     </section>
     <!-- frends -->
     <section id="friends">
@@ -289,24 +328,34 @@
       </div>
       <div class="event-container">
         <div class="event-content">
-          <img src="./images/event_1.png" alt="event1">
-          <em>영화</em>
-          <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
-          <p>2022.06.22 ~ 2022.07.13</p>
+          <a href="#">
+            <img src="./images/event_1.png" alt="event1">
+            <em>영화</em>
+            <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
+            <p>2022.06.22 ~ 2022.07.13</p>
+          </a>
         </div>
         <div class="event-content">
-          <img src="./images/event_2.png" alt="event2">
-          <em>HOT</em>
-          <h3>아티스트 토크 셰퍼드 페어리</h3>
-          <p>2022.06.22 ~ 2022.07.31</p>
+          <a href="#">
+            <img src="./images/event_2.png" alt="event2">
+            <em>HOT</em>
+            <h3>아티스트 토크 셰퍼드 페어리</h3>
+            <p>2022.06.22 ~ 2022.07.31</p>
+          </a>
         </div>
         <div class="event-content">
-          <img src="./images/event_3.png" alt="event3">
-          <em>제휴할인</em>
-          <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
-          <p>2022.06.01 ~ 2022.07.31</p>
+          <a href="#">
+            <img src="./images/event_3.png" alt="event3">
+            <em>제휴할인</em>
+            <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
+            <p>2022.06.01 ~ 2022.07.31</p>
+          </a>
         </div>
       </div>
+      <ul class="main-pagination">
+        <li></li>
+        <li></li>
+      </ul>
     </section>
     <!-- 스페셜관 -->
     <section id="special">
@@ -339,19 +388,29 @@
       <li><a href="#">이메일무단수집거부</a></li>
       <li class="m_none"><a href="#">영상정보처리기기 운영 및 관리방침</a></li>
       <li class="m_none"><a href="#">L.POINT회원안내</a></li>
-      <li class="block m_none"><a href="#">배정기준</a></li>
-      <li class="m_none"><a href="#">채용안내</a></li>
-      <li class="m_none"><a href="#">광고/임대문의</a></li>
-      <li class="m_none"><a href="#">윤리경영</a></li>
+      <li class="block m_none">
+        <span><a href="#">배정기준</a></span>
+        <span><a href="#">채용안내</a></span>
+        <span><a href="#">광고/임대문의</a></span>
+        <span><a href="#">윤리경영</a></span>
+      </li>
       <li><a href="#">기업정보</a></li>
     </ul>
     <ul class="footer-address">
-      <li>서울특별시 송파구 올림픽로 300 롯데월드타워 27층</li>
-      <li>고객센터 1544-8855</li>
-      <li>대표이사 최병환</li>
-      <li>사업자등록번호 313-87-00979</li>
-      <li>통신판매업신고번호 제1184호</li>
-      <li>개인정보 보호 최고 책임자 김무성</li>
+      <li>
+        <span class="line line-none">서울특별시 송파구 올림픽로 300 롯데월드타워 27층</span>
+        <span>고객센터 1544-8855</span>
+      </li>
+      <li>
+        <p>
+          <span class="line">대표이사 최병환</span>
+          <span class="line line-none">사업자등록번호 313-87-00979</span>
+        </p>
+        <p>
+          <span class="line">통신판매업신고번호 제1184호</span>
+          <span>개인정보 보호 최고 책임자 김무성</span>
+        </p>
+      </li>
     </ul>
     <p>copyright&copy; lotte cinema all right reserved</p>
   </footer>
