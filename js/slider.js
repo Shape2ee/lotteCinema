@@ -73,7 +73,7 @@ const loopSlide = () => {
   }
 };
 
-// setInterval(loopSlide, 5000); // 5초에 한번씩 자동 슬라이드 함수 실행
+setInterval(loopSlide, 5000); // 5초에 한번씩 자동 슬라이드 함수 실행
 
 for(let i = 0; i < paginationLi.length; i++){ // 선택되는 slider-pagination 찾기
   paginationLi[i].addEventListener("click", transSlide); // slider-pagination가 선택되면 함수 실행

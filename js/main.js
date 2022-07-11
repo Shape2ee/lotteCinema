@@ -1,5 +1,5 @@
 'use strict';
-
+/*********** go to top ***********/
 const goToTop = document.getElementById("goToTop");
 
 const scrollCheck = () => {
@@ -24,20 +24,91 @@ const moveTop = () => {
 window.addEventListener("scroll",scrollCheck);
 goToTop.addEventListener("click",moveTop);
 
-/*********** best movie click ***********/
-/* 
-const bestMovie = document.querySelectorAll(".best-movie-img_box");
 
-const overView = (event) => {
-  console.log(event.target);
-  for(let i = 0; i < bestMovie.length; i++) {
-    bestMovie[i].querySelector(".best-movie-img_box-over").classList.remove("best-movie-img_box-over-view")
-  }  
-  const imgBox = event.target.nextElementSibling;
-  imgBox.classList.add("best-movie-img_box-over-view")
+/*********** header up down ***********/
+const header = document.getElementById("header");
+
+let beforeScroll = 0;
+const scrollUpDown = () => {
+  header.className = "";
+  
+  if(253 < window.pageYOffset){
+    header.className = "header-down"
+    
+    if(beforeScroll > window.pageYOffset) {
+      header.className = "header-up"
+    }
+
+  }
+	beforeScroll = window.pageYOffset;
+
+  if(500 < window.pageYOffset) {
+    header.classList.add("header-line");
+  } else {
+    header.classList.remove("header-line");
+  }
+};
+
+window.addEventListener("scroll",scrollUpDown);
+
+
+/*********** mobile menu ***********/
+const mobileMenu = document.getElementById("m_gnb");
+const viewMenu = document.querySelector(".menu_icon");
+const closeBtn = document.querySelector(".x_btn");
+
+const addView = () => mobileMenu.classList.add("m_gnb-view");
+const closeView = () => mobileMenu.classList.remove("m_gnb-view");
+
+viewMenu.addEventListener("click", addView);
+closeBtn.addEventListener("click", closeView);
+
+
+/*********** like heart ***********/
+const likeAll = document.querySelectorAll(".like");
+
+for(let i = 0; i < likeAll.length; i++) {
+  likeAll[i].addEventListener("click", function() {
+    likeAll[i].classList.toggle("like-click")
+  })
+}
+
+
+/*********** preview tab ***********/
+const tabMenu = document.querySelector(".preview-tab");
+const tabButtonLi = tabMenu.getElementsByTagName("li");
+
+const activeTab = event => {
+  const activeLi = event.currentTarget;
+
+  for(let i = 0; i < tabButtonLi.length; i++) {
+    tabButtonLi[i].classList.remove("preview-tab-active")
+  }
+  
+  activeLi.classList.add("preview-tab-active");
+
+  const classActive = document.querySelector(".preview-tab-active");
+  const tabContainer = classActive.parentElement.nextElementSibling;
+  const tabContent = tabContainer.getElementsByTagName("li");
+
+  for(let i = 0; i < tabContent.length; i++){
+    tabContent[i].classList.toggle("preview-content-active");
+  }
 
 }
 
-for(let i = 0; i < bestMovie.length; i++) {
-  bestMovie[i].addEventListener("click",overView);
-} */
+for(let i = 0; i < tabButtonLi.length; i++) {
+  tabButtonLi[i].addEventListener("click",activeTab)
+}
+
+
+const serchContainer = document.getElementById("serch");
+const serchBtn = document.querySelector(".serch_icon");
+const serchXBtn = serchContainer.querySelector(".x_btn");
+
+const viewForm = () => {
+  serchContainer.classList.toggle("serch-view");
+}
+
+serchBtn.addEventListener("click", viewForm);
+serchXBtn.addEventListener("click", viewForm)
