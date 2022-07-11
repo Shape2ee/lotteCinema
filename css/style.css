@@ -465,9 +465,12 @@ section {
 }
 
 #best_movie .best_movie-tit {
+  overflow: hidden;
   margin: 2rem 0 1.6rem;
   font-size: 2.4rem;
+  text-overflow: ellipsis;
   color: #000;
+  white-space: nowrap;
 }
 
 #best_movie .best_movie-sub_txt {
@@ -518,7 +521,7 @@ section {
   background-color: #ddd;
 }
 
-#preview .preview-tab li.preview-tab-active {
+#preview .preview-tab li.active {
   color: #000;
 }
 
@@ -531,7 +534,7 @@ section {
   display: none;
 }
 
-#preview .preview-content.preview-content-active {
+#preview .preview-content.active {
   display: block;
 }
 
@@ -833,7 +836,7 @@ footer > p {
   transition: 0.3s;
 }
 
-#goToTop.goToTop-show {
+#goToTop.show {
   opacity: 1;
   visibility: visible;
 }

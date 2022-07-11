@@ -293,13 +293,16 @@
     background-color: #BF2419;
     transform: translateY(-5px);
   }
-  
+
+  /****** serch ******/
+  #serch .serch-wrap {
+    height: 80vh;
+  }
+
   #serch #serch_form {
     width: 60%;
   }
 }
-
-
 
 @media screen and (min-width: 1600px) {
   /****** header ******/

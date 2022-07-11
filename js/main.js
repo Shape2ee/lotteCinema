@@ -6,9 +6,9 @@ const scrollCheck = () => {
   let pageYOffset = window.pageYOffset;
 
   if(pageYOffset !== 0) {
-    goToTop.classList.add('goToTop-show');
+    goToTop.classList.add('show');
   } else {
-    goToTop.classList.remove('goToTop-show');
+    goToTop.classList.remove('show');
   }
 }
 
@@ -60,9 +60,9 @@ const closeBtn = document.querySelector(".x_btn");
 const addView = () => mobileMenu.classList.add("m_gnb-view");
 const closeView = () => mobileMenu.classList.remove("m_gnb-view");
 
+
 viewMenu.addEventListener("click", addView);
 closeBtn.addEventListener("click", closeView);
-
 
 /*********** like heart ***********/
 const likeAll = document.querySelectorAll(".like");
@@ -77,31 +77,25 @@ for(let i = 0; i < likeAll.length; i++) {
 /*********** preview tab ***********/
 const tabMenu = document.querySelector(".preview-tab");
 const tabButtonLi = tabMenu.getElementsByTagName("li");
+const tabContent = document.querySelectorAll(".preview-content");
 
-const activeTab = event => {
-  const activeLi = event.currentTarget;
-
+const activeTab = () => {
   for(let i = 0; i < tabButtonLi.length; i++) {
-    tabButtonLi[i].classList.remove("preview-tab-active")
+    tabButtonLi[i].classList.toggle("active")
   }
-  
-  activeLi.classList.add("preview-tab-active");
-
-  const classActive = document.querySelector(".preview-tab-active");
-  const tabContainer = classActive.parentElement.nextElementSibling;
-  const tabContent = tabContainer.getElementsByTagName("li");
 
   for(let i = 0; i < tabContent.length; i++){
-    tabContent[i].classList.toggle("preview-content-active");
+    tabContent[i].classList.toggle("active");
   }
 
 }
 
 for(let i = 0; i < tabButtonLi.length; i++) {
-  tabButtonLi[i].addEventListener("click",activeTab)
+  tabButtonLi[i].addEventListener("click", activeTab)
 }
 
 
+/*********** serch ***********/
 const serchContainer = document.getElementById("serch");
 const serchBtn = document.querySelector(".serch_icon");
 const serchXBtn = serchContainer.querySelector(".x_btn");
