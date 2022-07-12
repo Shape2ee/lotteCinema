@@ -1,3 +1,4 @@
+'use strict';
 
 /*********** like heart ***********/
 const likeAll = document.querySelectorAll(".like");
