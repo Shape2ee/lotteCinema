@@ -2,96 +2,6 @@
 
 /****** pc ******/
 @media screen and (min-width: 1440px) {
-  /****** header ******/
-  header{
-    padding: 0 5rem;
-    height: 10rem;
-    font-size: 1.6rem;
-  }
-
-  header .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  header #gnb,
-  header #utill {
-    display: flex;
-  }
-
-  header #gnb {
-    order: 1;
-    margin-right: auto;
-  }
-
-  header #utill {
-    margin-left: auto;
-    order: 3;
-  }
-
-  header > ul {
-    height: 100%;
-  }
-
-  header > ul > li {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 0 0.5rem;
-    height: 100%;
-    color: #333;
-  }
-
-  header > ul > li > a {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    height: 100%;
-  }
-  
-  header > ul > li > a:hover {
-    color: #DA291C;
-  }
-
-  header #gnb {
-    transform: translateX(-1rem);
-  }
-  
-  header #gnb ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    background-color: #f5f5f5;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2);
-  }
-
-  header #gnb ul li a {
-    display: block;
-    padding: 1.5rem 2rem;
-    border-top: 1px solid #eee;
-  }
-
-  header #gnb li:hover ul {
-    display: block;
-  }
-
-  header #gnb li:hover ul li:hover {
-    background-color: #DA291C;
-    color: #fff;
-  }
-
-  header .menu_icon {
-    display: none;
-  }
-
-  header .serch_icon {
-    margin-left: 2rem;
-  }
-
   /****** main_banner ******/
   article {
     margin-top: 10rem;
@@ -157,20 +67,20 @@
     margin-right: 3rem;
   }
 
-  #best_movie .best-movie-img_box:hover .best-movie-img_box-over {
+  #best_movie .best_movie-img:hover .best_movie-img-over {
     opacity: 1;
     visibility: visible;
   }
 
   
-  #best_movie .best-movie-img_box-over .ticketing:hover,
-  #best_movie .best-movie-img_box-over .movie_more:hover {
+  #best_movie .best_movie-img-over .ticketing:hover,
+  #best_movie .best_movie-img-over .movie_more:hover {
     background-color: #DA291C;
     color: #fff;
     border-color: #DA291C;
   }
   
-  #best_movie .best-movie-img_box-over .like-click {
+  #best_movie .best_movie-img-over .like-click {
     background-image: url(../images/heart_r.svg);
   }
 
@@ -305,19 +215,6 @@
 }
 
 @media screen and (min-width: 1600px) {
-  /****** header ******/
-  header > ul > li {
-    margin: 0 1rem;
-  }
-
-  header > ul > li > a {
-    padding: 1rem;
-  }
-  
-  header #gnb {
-    transform: translateX(-2rem);
-  }
-
   /****** main ******/
   .slide-arrow {
     display: flex;

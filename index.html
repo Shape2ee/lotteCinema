@@ -31,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- style css -->
+  <link rel="stylesheet" href="./css/basic.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/tablet_style.css">
   <link rel="stylesheet" href="./css/pc_style.css">
@@ -43,7 +44,7 @@
 
   <!-- header -->
   <header id="header">
-    <h1 class="logo"><a href="#"><span class="blind">롯데시네마</span></a></h1>
+    <h1 class="logo"><a href="/"><span class="blind">롯데시네마</span></a></h1>
     <!-- gnb -->
     <ul id="gnb">
       <li>
@@ -55,7 +56,7 @@
         </ul>
       </li>
       <li>
-        <a href="#">영화</a>
+        <a href="./movie/movie.html">영화</a>
         <ul>
           <li><a href="#">홈</a></li>
           <li><a href="#">현재상영작</a></li>
@@ -125,7 +126,7 @@
         <li><a href="#">바로예매</a></li>
       </ul>
     </nav>
-    </ul>
+
     <!-- utill -->
     <ul id="utill">
       <li><a href="#">로그인</a></li>
@@ -192,9 +193,9 @@
       <div class="best_movie-wrap">
         <div class="best_movie-container">
           <div class="best_movie-content">
-            <div class="best-movie-img_box">
+            <div class="best_movie-img">
               <img src="./images/movie_1.jpg" alt="탑건: 매버릭">
-              <div class="best-movie-img_box-over">
+              <div class="best_movie-img-over">
                 <a href="#" class="ticketing">예매하기</a>
                 <a href="#" class="movie_more">상세보기</a>
                 <button class="like"><span class="blind">좋아요</span></button>
@@ -205,9 +206,9 @@
             <span class="best_movie-sub_txt best_movie-sub_txt-star">9.8</span>
           </div>
           <div class="best_movie-content">
-            <div class="best-movie-img_box">
+            <div class="best_movie-img">
               <img src="./images/movie_2.jpg" alt="토르: 러브 앤 썬더">
-              <div class="best-movie-img_box-over">
+              <div class="best_movie-img-over">
                 <a href="#" class="ticketing">예매하기</a>
                 <a href="#" class="movie_more">상세보기</a>
                 <button class="like"><span class="blind">좋아요</span></button>
@@ -218,9 +219,9 @@
             <span class="best_movie-sub_txt d_day">d-5</span>
           </div>
           <div class="best_movie-content">
-            <div class="best-movie-img_box">
+            <div class="best_movie-img">
               <img src="./images/movie_3.jpg" alt="헤어질 결심">
-              <div class="best-movie-img_box-over">
+              <div class="best_movie-img-over">
                 <a href="#" class="ticketing">예매하기</a>
                 <a href="#" class="movie_more">상세보기</a>
                 <button class="like"><span class="blind">좋아요</span></button>
@@ -231,9 +232,9 @@
             <span class="best_movie-sub_txt best_movie-sub_txt-star">9.5</span>
           </div>
           <div class="best_movie-content">
-            <div class="best-movie-img_box">
+            <div class="best_movie-img">
               <img src="./images/movie_4.jpg" alt="마녀2">
-              <div class="best-movie-img_box-over">
+              <div class="best_movie-img-over">
                 <a href="#" class="ticketing">예매하기</a>
                 <a href="#" class="movie_more">상세보기</a>
                 <button class="like"><span class="blind">좋아요</span></button>
@@ -265,7 +266,7 @@
         <li><h3>무대인사</h3></li>
       </ul>
       <ul class="preview-container">
-        <li class="preview-content active">
+        <li id="preview1" class="preview-content active">
           <div class="preview-box">
             <div class="preview-img">
               <img src="./images/preview_img1.png" alt="체리마호 스폐셜 GV">
@@ -282,7 +283,7 @@
             <div class="slide-next preview-next"><span class="blind">다음</span></div>
           </div>
         </li>
-        <li class="preview-content ">
+        <li id="preview2" class="preview-content ">
           <div class="preview-box">
             <div class="preview-img">
               <img src="./images/preview_img2.jpg" alt="마녀2">
@@ -480,6 +481,7 @@
   <button id="goToTop"><span class="blind">위로</span></button>
   <!-- script -->
   <script src="./js/slider.js"></script>
+  <script src="./js/basic.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
