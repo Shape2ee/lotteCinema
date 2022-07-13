@@ -45,10 +45,24 @@
 }
 
 .movie-tab {
+  position: relative;
   display: flex;
   font-size: 1.8rem;
   color: #999;
 }
+
+.movie-tab::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+
 
 .movie-tab li {
   cursor: pointer;
@@ -61,18 +75,6 @@
 .movie-tab li:first-child {
   position: relative;
   margin-right: 2rem;
-}
-
-.movie-tab li:first-child::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: -1rem;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 12px;
-  background-color: #ccc;
 }
 
 .movie-dropdown {
@@ -125,7 +127,7 @@
   background-color: #fff;
   border: 1px solid transparent;  
   z-index: 99;
-  transition: 0.5s;
+  transition: max-height 0.5s;
 }
 
 .movie-dropdown_menu.show {
@@ -159,8 +161,60 @@
 }
 
 .movie-img {
+  position: relative;
   width: 28.205vw;
   min-width: 110px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.movie-img a {
+  display: block;
+}
+
+.movie-img img {
+  transition: transform 0.5s;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s ;
+}
+
+.movie-info p {
+  overflow: hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:10;
+  -webkit-box-orient:vertical;
+  margin: 3rem;
+}
+
+.movie-info .more {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 8rem;
+  border-top: 1px solid #54585A;
+  color: #ccc;
+  transition: padding 0.3s;
+}
+
+.movie-info .more:hover {
+  color: #fff;
+  padding-bottom: 1rem;
 }
 
 .movie-text {
@@ -174,6 +228,7 @@
   margin-bottom: 0.6rem;
   font-size: 2rem;
   color: #000;
+  line-height: 3rem;
 }
 
 .movie-text .movie-sub_txt {
@@ -195,14 +250,16 @@
   margin-left: 0.4rem; 
 }
 
-.movie-text p.block {
+.movie-text p.release {
   display: block;
   margin-top: 0.4rem;
   margin-left: 0;
   font-size: 1.2rem;
+  color: #999;
 }
 
 .movie-tiketing {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -212,4 +269,137 @@
   text-align: center;
   background-color: #DA291C;
   color: #fff;
+}
+
+.movie-more {
+  margin: 1rem 0 10rem;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+  .movie-title {
+    height: 30rem;
+  }
+
+  .movie-title h2 {
+    font-size: 4rem;
+  }
+
+  .movie-dropdown {
+    width: 230px;
+    font-size: 1.6rem;
+  }
+
+  .movie-content.show {
+    grid-template-columns: repeat(auto-fit, minmax(31% , auto));
+    gap: 2rem;
+  }
+
+  .movie-content li {
+    flex-direction: column;
+  }
+
+  .movie-img {
+    width: 100%;
+  }
+
+  .movie-text {
+    margin: 2rem 0 0;
+  }
+
+  .movie-text h3 {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 3rem;
+  }
+
+  .movie-text p {
+    display: block;
+    margin: 0.4rem 0 0;
+  }
+
+  .movie-text h3 a {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .movie-tiketing {
+    left: auto;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .movie-more {
+    margin: 2rem 0 15rem;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .movie {
+    margin-top: 10rem;
+  }
+  .movie-title h2 {
+    font-size: 4.6rem;
+  }
+
+  .movie-tab {
+    font-size: 2.4rem;
+  }
+
+  .movie-tab::after {
+    height: 2rem;
+  }
+  .movie-tab li:first-child {
+    margin-right: 3rem;
+  }
+  .movie-tab li:not(.active):hover {
+    color: #54585A;
+  }
+
+  .movie-dropdown_btn:not(.selected):hover {
+    border-color: #ccc;
+  }
+
+  .movie-container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+  }
+
+  .movie-content.show {
+    grid-template-columns: repeat(auto-fit, minmax(23.5%, auto));
+    gap: 2rem;
+  }
+
+  .movie-text h3 {
+    font-size: 2.4rem;
+  }
+
+  .movie-img:hover .movie-info {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .movie-tiketing:hover {
+    background-color: #BF2419;
+  }
+
+  .movie-more {
+    margin: 2rem 0 17rem;
+  }
+
+  .movie-more:hover {
+    border-color: #DA291C;
+  }
 }

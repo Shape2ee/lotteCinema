@@ -311,6 +311,12 @@ footer > p {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  transform: translateY(-50%);
+  transition: transform 1s;
+}
+
+#serch.serch-view #serch_form {
+  transform: translateY(0);
 }
 
 #serch .serch-wrap #serch_box {

@@ -94,6 +94,10 @@
     margin: 2rem 1rem 5rem;
   }
 
+  #preview .preview-tab li:not(.active):hover {
+    color: #767676;
+  }
+
   #preview .preview-container {
     margin: 0 auto;
     max-width: 1400px;

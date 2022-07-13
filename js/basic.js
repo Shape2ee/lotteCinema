@@ -1,4 +1,5 @@
 'use strict';
+
 /*********** go to top ***********/
 const goToTop = document.getElementById("goToTop");
 
@@ -29,6 +30,15 @@ goToTop.addEventListener("click", moveTop);
 const header = document.getElementById("header");
 
 let beforeScroll = 0;
+
+const createLine = () => {
+  if(500 < window.pageYOffset) {
+    header.classList.add("header-line");
+  } else {
+    header.classList.remove("header-line");
+  }
+}
+
 const scrollUpDown = () => {
   header.className = "";
   
@@ -41,18 +51,11 @@ const scrollUpDown = () => {
 
   }
 	beforeScroll = window.pageYOffset;
+  createLine();
 };
 
-const createLine = () => {
-  if(500 < window.pageYOffset) {
-    header.classList.add("header-line");
-  } else {
-    header.classList.remove("header-line");
-  }
-}
-
 window.addEventListener("scroll", scrollUpDown);
-window.addEventListener("scroll", createLine);
+// window.addEventListener("scroll", createLine);
 
 /*********** mobile menu ***********/
 const mobileMenu = document.getElementById("m_gnb");
