@@ -19,7 +19,7 @@
 <body>
     <!-- header -->
     <header id="header">
-    <h1 class="logo"><a href="/"><span class="blind">롯데시네마</span></a></h1>
+    <h1 class="logo"><a href="../"><span class="blind">롯데시네마</span></a></h1>
     <!-- gnb -->
     <ul id="gnb">
       <li>
@@ -723,18 +723,21 @@
     const dropMenu = document.querySelector(".movie-dropdown_menu");
     const menuList = dropMenu.getElementsByTagName("li");
 
-    dropDownBtn.addEventListener("click", function () {
+    dropDown.addEventListener("click", function () {
       dropMenu.classList.toggle("show");
       dropDownBtn.classList.toggle("selected");
     })
 
-    dropDownBtn.addEventListener("blur", function () {
+    dropDown.addEventListener("blur", function () {
       dropMenu.classList.remove("show");
-      dropDownBtn.classList.remove("selected")
+      dropDownBtn.classList.toggle("selected");
     })
-
+    
     const selectOption = (e) => {
-      console.log(e.target);
+      const value = e.target.textContent;
+      dropDownBtn.textContent = value;
+      dropMenu.classList.remove("show");
+      dropDownBtn.classList.toggle("selected");
     }
 
     for(let i = 0; i < menuList.length; i++) {
