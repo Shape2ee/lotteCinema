@@ -15,6 +15,8 @@
   <!-- style css -->
   <link rel="stylesheet" href="../css/basic.css">
   <link rel="stylesheet" href="./css/ticketing.css">
+  <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/ticketing_tablet.css">
+  <link rel="stylesheet" media="screen and (min-width:1440px)" href="./css/ticketing_pc.css">
 </head>
 <body>
   
@@ -130,89 +132,141 @@
         <!-- movie -->
         <div class="tiketing-movie">
           <h2 class="title">영화</h2>
-          <ul class="tiketing-tab">
-            <li class="active">전체</li>
-            <li>스페셜관</li>
-          </ul>
           <ul class="tiketing-movie_option">
-            <li class="active">
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_12" data-active="off">
+              탑건: 메버릭
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_12" data-active="off">
+              <h3>토르: 러브 앤 썬더</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_15" data-active="off">
+              <h3>헤어질 결심</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_15" data-active="off">
+              <h3>범죄도시2</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_15" data-active="off">
+              <h3>마녀(魔女) Part2. The Other One</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_12" data-active="off">
+              <h3>베르네 부인의 장미정원</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_12" data-active="off">
+              <h3>큐어</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_all" data-active="off">
+              <h3>버즈 라이트이어</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_all" data-active="off">
+              <h3>빅샤크4: 바다공룡 대모험</h3>
             </li>
-            <li>
-              <h3>탑건: 매버릭</h3>
+            <li class="movie_name grade_12" data-active="off">
+              <h3>쥬라기 월드: 도미니언</h3>
+            </li>
+            <li class="movie_name grade_12" data-active="off">
+              <h3>브로커</h3>
+            </li>
+            <li class="movie_name grade_15" data-active="off">
+              <h3>모어</h3>
             </li>
           </ul>
+
         </div>
         <!-- theater -->
         <div class="tiketing-theater">
           <h2 class="title">영화관</h2>
-          <ul class="tiketing-area">
-            <li>MY 영화관</li>
-            <li>서울(23)
-              <ul class="tiketing-zone">
-                <li>가산디지털</li>
-                <li>가양</li>
-                <li>강동</li>
-                <li>건대입구</li>
-                <li>김포공항</li>
-                <li>노원</li>
-                <li>도곡</li>
-                <li>독산</li>
-                <li>브로드웨이(신사)</li>
-                <li>서울대입구</li>
-                <li>수락산</li>
-                <li>수유</li>
-                <li>신림</li>
-                <li>에비뉴엘(명동)</li>
-                <li>영등포</li>
-                <li>용산</li>
-                <li>월드타워</li>
-                <li>은평(롯데몰)</li>
-                <li>중랑</li>
-                <li>청량리</li>
-                <li>합정</li>
-                <li>홍대입구</li>
-              </ul>
-            </li>
-            <li>경기/인천(46)</li>
-            <li>충청/대전(11)</li>
-            <li>전라/광주(10)</li>
-            <li>경북/대구(17)</li>
-            <li>경남/부산/울산(25)</li>
-            <li>강원(4)</li>
-            <li>제주(4)</li>
+          <ul class="tiketing-tab">
+            <li class="active">전체</li>
+            <li>스페셜관</li>
           </ul>
-          <div class="select_theater">
-            영화관을<br>선택해주세요
-          </div>          
+          <div class="tiketing-area-wrap">
+
+            <ul class="tiketing-area show">
+              <li>MY 영화관</li>
+              <li>서울(23)
+                <ul class="tiketing-zone">
+                  <li>가산디지털</li>
+                  <li>가양</li>
+                  <li>강동</li>
+                  <li>건대입구</li>
+                  <li>김포공항</li>
+                  <li>노원</li>
+                  <li>도곡</li>
+                  <li>독산</li>
+                  <li>브로드웨이(신사)</li>
+                  <li>서울대입구</li>
+                  <li>수락산</li>
+                  <li>수유</li>
+                  <li>신림</li>
+                  <li>에비뉴엘(명동)</li>
+                  <li>영등포</li>
+                  <li>용산</li>
+                  <li>월드타워</li>
+                  <li>은평(롯데몰)</li>
+                  <li>중랑</li>
+                  <li>청량리</li>
+                  <li>합정</li>
+                  <li>홍대입구</li>
+                </ul>
+              </li>
+              <li>경기/인천(46)</li>
+              <li>충청/대전(11)</li>
+              <li>전라/광주(10)</li>
+              <li>경북/대구(17)</li>
+              <li>경남/부산/울산(25)</li>
+              <li>강원(4)</li>
+              <li>제주(4)</li>
+              <li class="select_theater">
+                영화관을<br>선택해주세요
+              </li>        
+            </ul>
+            <ul class="tiketing-area ">
+              <li>샤롯데(11)</li>
+              <li>수퍼플렉스 G(1)
+                <ul class="tiketing-zone">
+                  <li>가산디지털</li>
+                  <li>가양</li>
+                  <li>강동</li>
+                  <li>건대입구</li>
+                  <li>김포공항</li>
+                  <li>노원</li>
+                  <li>도곡</li>
+                  <li>독산</li>
+                  <li>브로드웨이(신사)</li>
+                  <li>서울대입구</li>
+                  <li>수락산</li>
+                  <li>수유</li>
+                  <li>신림</li>
+                  <li>에비뉴엘(명동)</li>
+                  <li>영등포</li>
+                  <li>용산</li>
+                  <li>월드타워</li>
+                  <li>은평(롯데몰)</li>
+                  <li>중랑</li>
+                  <li>청량리</li>
+                  <li>합정</li>
+                  <li>홍대입구</li>
+                </ul>
+              </li>
+              <li>수퍼 S(4)</li>
+              <li>수퍼플렉스(9)</li>
+              <li>수퍼 4D(10)</li>
+              <li>컬러리움(1)</li>
+              <li>씨네살롱(1)</li>
+              <li>씨네패밀리(1)</li>
+              <li>씨네커플(29)</li>
+              <li>씨네비즈(5)</li>
+              <li>씨네컴포트(리클라이너)(20)</li>
+              <li class="select_theater">
+                영화관을<br>선택해주세요
+              </li>        
+            </ul>
+          </div>
+  
         </div>
         <!-- date -->
         <div class="tiketing-date">
-          <h2 class="title">날짜/시간</h3>
+          <h2 class="title">날짜/시간</h2>
 
           <div class="tiketing-day">
             <h3 class="tiketing-month">2022.07</h3>
@@ -224,31 +278,31 @@
               <ul class="tiketing-week">
                 <li class="tiketing-date_area">
                   <p class="date_value">12</p>
-                  <p id="today">오늘</p>
+                  <p id="today" class="week_day">오늘</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">13</p>
-                  <p>수</p>
+                  <p class="week_day">수</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">14</p>
-                  <p>목</p>
+                  <p class="week_day">목</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">15</p>
-                  <p>금</p>
+                  <p class="week_day">금</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">16</p>
-                  <p>토</p>
+                  <p class="week_day">토</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">17</p>
-                  <p>일</p>
+                  <p class="week_day">일</p>
                 </li>
                 <li class="tiketing-date_area">
                   <p class="date_value">18</p>
-                  <p>월</p>
+                  <p class="week_day">월</p>
                 </li>
               </ul>
             </div>
@@ -330,16 +384,37 @@
         <!-- select movie -->
         <div class="tiketing-select">
           <div class="tiketing-select_movie">
-            영화선택
+            <!-- <p class="nomovie">영화선택</p> -->
+            <div class="tiketing-select_wrap">
+              <div class="tiketing-select_img"><span class="blind">영화 포스터</span></div>
+              <div class="tiketing-select_txt">
+                <h3 id="movieName">영화제목</h3>
+                <p id="movieGrade">영화등급</p>
+              </div>
+
+            </div>
           </div>
           <div class="tiketing-select_date">
-            일시선택
+            <!-- <p class="nomovie">일시선택</p> -->
+            <ul>
+              <li>
+                <span>극장</span><em>선택극장</em>
+              </li>
+              <li>
+                <span>일시</span><em>선택일시</em>
+              </li>
+              <li>
+                <span>상영관</span><em>선택상영관</em>
+              </li>
+            </ul>
           </div>
-          <div class="tiketing_seatBtn">좌석선택</div>
+          <div class="tiketing_seatBtn">
+            <a href="#" id="tiketingBtn">좌석선택</a>
+          </div>
         </div>
       </div>
   </section>
-  <!-- 스크롤 왜이렇게 안되냐...... -->
+
   <!-- footer -->
   <footer>
     <ul class="footer-info">
@@ -378,5 +453,6 @@
   <!-- go to up -->
   <button id="goToTop"><span class="blind">위로</span></button>
   <script src="../js/basic.js"></script>
+  <script src="./js/tiketing.js"></script>
 </body>
 </html>

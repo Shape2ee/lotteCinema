@@ -1,221 +1,219 @@
 @charset "utf-8";
 
 /****** pc ******/
-@media screen and (min-width: 1440px) {
-  /****** main_banner ******/
-  article {
-    margin-top: 10rem;
-    padding: 0 5rem;
-  }
-  
-  article .slider {
-    height: calc(100vh - 15rem);
-  }
 
-  article .slider-pagination {
-    width: 91rem;
-    padding-left: 10rem;
-    height: 14rem;
-  }
+/****** main_banner ******/
+article {
+  margin-top: 10rem;
+  padding: 0 5rem;
+}
 
-  article .slider-pagination li {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+article .slider {
+  height: calc(100vh - 15rem);
+}
 
-  article .slider-pagination li::after {
-    display: none;
-  }
+article .slider-pagination {
+  width: 91rem;
+  padding-left: 10rem;
+  height: 14rem;
+}
 
-  article .slider-pagination li .pagination-title {
-    display: block;
-    margin-top: 1.4rem;
-    font-weight: 400;
-  }
+article .slider-pagination li {
+  align-items: flex-start;
+  flex-direction: column;
+}
 
-  article .slider-pagination li.active .pagination-title {
-    color: #000;
-  }
+article .slider-pagination li::after {
+  display: none;
+}
 
-  /****** main ******/
-  section {
-    padding: 17rem 0;
-  }
+article .slider-pagination li .pagination-title {
+  display: block;
+  margin-top: 1.4rem;
+  font-weight: 400;
+}
 
-  .main-title {
-    padding: 0 5rem 8rem;
-  }
+article .slider-pagination li.active .pagination-title {
+  color: #000;
+}
 
-  .main-title h2 {
-    font-size: 4.6rem;
-  }
+/****** main ******/
+section {
+  padding: 17rem 0;
+}
 
-  .ghost_btn:hover {
-    background-color: #BF2419;
-    color: #fff;
-  }
+.main-title {
+  padding: 0 5rem 8rem;
+}
 
-  /****** best_movie ******/
-  #best_movie .best_movie-wrap{
-    position: relative;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
+.main-title h2 {
+  font-size: 4.6rem;
+}
 
-  #best_movie .best_movie-content {
-    width: calc(25% - 2.25rem);
-    margin-right: 3rem;
-  }
+.ghost_btn:hover {
+  background-color: #bf2419;
+  color: #fff;
+}
 
-  #best_movie .best_movie-img:hover .best_movie-img-over {
-    opacity: 1;
-    visibility: visible;
-  }
+/****** best_movie ******/
+#best_movie .best_movie-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
+}
 
-  
-  #best_movie .best_movie-img-over .ticketing:hover,
-  #best_movie .best_movie-img-over .movie_more:hover {
-    background-color: #DA291C;
-    color: #fff;
-    border-color: #DA291C;
-  }
-  
-  #best_movie .best_movie-img-over .like-click {
-    background-image: url(../images/heart_r.svg);
-  }
+#best_movie .best_movie-content {
+  width: calc(25% - 2.25rem);
+  margin-right: 3rem;
+}
 
-  /****** 시사회/무대인사 ******/
-  #preview {
-    margin: 0 5rem;
-    padding: 12rem 0;
-  }
+#best_movie .best_movie-img:hover .best_movie-img-over {
+  opacity: 1;
+  visibility: visible;
+}
 
-  #preview .preview-tab li {
-    margin: 2rem 1rem 5rem;
-  }
+#best_movie .best_movie-img-over .ticketing:hover,
+#best_movie .best_movie-img-over .movie_more:hover {
+  background-color: #da291c;
+  color: #fff;
+  border-color: #da291c;
+}
 
-  #preview .preview-tab li:not(.active):hover {
-    color: #767676;
-  }
+#best_movie .best_movie-img-over .like-click {
+  background-image: url(../images/heart_r.svg);
+}
 
-  #preview .preview-container {
-    margin: 0 auto;
-    max-width: 1400px;
-    width: calc(100% - 100px);
-  }
+/****** 시사회/무대인사 ******/
+#preview {
+  margin: 0 5rem;
+  padding: 12rem 0;
+}
 
-  #preview .preview-img {
-    width: 640px;
-    height: 500px;
-  }
+#preview .preview-tab li {
+  margin: 2rem 1rem 5rem;
+}
 
-  #preview .preview-txt {
-    padding: 10rem 8rem 10rem 70rem;
-  }
+#preview .preview-tab li:not(.active):hover {
+  color: #767676;
+}
 
-  #preview .preview-txt h4 {
-    font-size: 3.2rem;
-    margin-bottom: 3rem;
-  }
+#preview .preview-container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: calc(100% - 100px);
+}
 
-  #preview .preview-txt h4 .block {
-    display: inline-block;
-  }
+#preview .preview-img {
+  width: 640px;
+  height: 500px;
+}
 
-  #preview .preview-txt .ghost_btn {
-    margin-top: 6rem;
-  }
+#preview .preview-txt {
+  padding: 10rem 8rem 10rem 70rem;
+}
 
-  /****** 상영 예정작 ******/
-  #new_movie .new_movie-wrap {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+#preview .preview-txt h4 {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
 
-  #new_movie .new_movie-content .more:hover {
-    color: #DA291C;
-  }
+#preview .preview-txt h4 .block {
+  display: inline-block;
+}
 
-  #new_movie .new_movie-content .more:hover::before {
-    animation: hoverLine 1s;
-  }
+#preview .preview-txt .ghost_btn {
+  margin-top: 6rem;
+}
 
-  @keyframes hoverLine {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 34px;
-      transition-delay: 1s;
-    }
-  }
+/****** 상영 예정작 ******/
+#new_movie .new_movie-wrap {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-  /****** friends ******/
-  #friends {
-    margin: 0 5rem;
-    padding: 15rem 10.938vw;
-  }
-  
-  #friends .friends-container p .block:nth-child(2) {
-    display: inline-block;
-  }
+#new_movie .new_movie-content .more:hover {
+  color: #da291c;
+}
 
-  /****** event ******/
-  #event .event-wrap {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
+#new_movie .new_movie-content .more:hover::before {
+  animation: hoverLine 1s;
+}
 
-  #event .event-img_box {
-    overflow: hidden;
+@keyframes hoverLine {
+  0% {
+    width: 0;
   }
+  100% {
+    width: 34px;
+    transition-delay: 1s;
+  }
+}
 
-  #event .event-img_box img {
-    transition: 0.5s;
-  }
+/****** friends ******/
+#friends {
+  margin: 0 5rem;
+  padding: 15rem 10.938vw;
+}
 
-  #event .event-content:hover .event-img_box img {
-    transform: scale(1.05);
-    transition: 0.5s;
-  }
+#friends .friends-container p .block:nth-child(2) {
+  display: inline-block;
+}
 
-  /****** 스페셜관 ******/
-  #special .special-grid {
-    grid-template-columns: repeat(6,200px);
-    justify-content: center;
-  }
+/****** event ******/
+#event .event-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
+}
 
-  #special .special-grid li:hover{
-    border: 2px solid #DA291C;
-  }
+#event .event-img_box {
+  overflow: hidden;
+}
 
-  #special .special-grid li:hover a {
-    transform: translateY(-5px);
-  }
+#event .event-img_box img {
+  transition: 0.5s;
+}
 
-  /****** footer ******/
-  footer > ul,
-  footer > p{
-    margin: 0 auto;
-    max-width: 1400px;
-  }
+#event .event-content:hover .event-img_box img {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
 
-  /****** go to top ******/
-  #goToTop:hover {
-    background-color: #BF2419;
-    transform: translateY(-5px);
-  }
+/****** 스페셜관 ******/
+#special .special-grid {
+  grid-template-columns: repeat(6, 200px);
+  justify-content: center;
+}
 
-  /****** serch ******/
-  #serch .serch-wrap {
-    height: 80vh;
-  }
+#special .special-grid li:hover {
+  border: 2px solid #da291c;
+}
 
-  #serch #serch_form {
-    width: 60%;
-  }
+#special .special-grid li:hover a {
+  transform: translateY(-5px);
+}
+
+/****** footer ******/
+footer > ul,
+footer > p {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/****** go to top ******/
+#goToTop:hover {
+  background-color: #bf2419;
+  transform: translateY(-5px);
+}
+
+/****** serch ******/
+#serch .serch-wrap {
+  height: 80vh;
+}
+
+#serch #serch_form {
+  width: 60%;
 }
 
 @media screen and (min-width: 1600px) {
@@ -223,7 +221,7 @@
   .slide-arrow {
     display: flex;
   }
-  
+
   .slide-prev,
   .slide-next {
     position: absolute;
@@ -250,5 +248,4 @@
   #preview .preview-arrow .preview-next {
     right: -10rem;
   }
-  
 }

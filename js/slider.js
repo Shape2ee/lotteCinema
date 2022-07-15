@@ -78,3 +78,51 @@ setInterval(loopSlide, 5000); // 5초에 한번씩 자동 슬라이드 함수 �
 for(let i = 0; i < paginationLi.length; i++){ // 선택되는 slider-pagination 찾기
   paginationLi[i].addEventListener("click", transSlide); // slider-pagination가 선택되면 함수 실행
 };
+
+/*
+let touchstartX;
+let currentClassList;
+let currentImg;
+let currentActiveLi;
+let nowAcriveLi;
+let mouseStart = false;
+
+function touchEnd (e) {
+ 
+  
+}
+
+function touchStart (e) {
+  mouseStart = true;
+
+  e.preventDefault();
+
+  touchstartX = e.clientX || e.touches[0].screenX;
+  currentImg = e.target;
+
+  currentImg.addEventListener('mousemove', touchMove);
+  currentImg.addEventListener('mouseup', touchEnd);
+
+  currentClassList = currentImg.parentElement.parentElement;
+  currentActiveLi = currentClassList.getAttribute('data-position');
+}
+
+function touchMove (e) {
+  e.preventDefault();
+
+  let currentX = e.clientX || e.touches[0].screenX;;
+  nowAcriveLi = Number(currentActiveLi) + (Number(currentX) - Number(touchstartX));
+
+  currentClassList.style.transition = 'transform 0s linear';
+  currentClassList.style.transform = 'translateX(' + nowAcriveLi + 'px)';
+}
+
+
+const dragimgList = imgList.querySelectorAll("li a");
+console.log(dragimgList);
+for(let i = 0; i < dragimgList.length; i++) {
+  // 해당 요소에 마우스를 누르면, 드래그를 시작할 수 있으므로, 이벤트
+  dragimgList[i].addEventListener("mousedown", touchStart);
+  dragimgList[i].addEventListener("touchstart", touchStart);
+}
+*/
