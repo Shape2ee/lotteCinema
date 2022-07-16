@@ -112,9 +112,17 @@
 
 .tiketing-area > li {
   padding: 2rem 3rem;
-  border-bottom: 1px solid #f5f5f5;
+  border: 1px solid transparent;
   font-size: 1.6rem;
   cursor: pointer;
+}
+
+/* .tiketing-area > li.active {
+  
+} */
+
+.tiketing-area.show .tiketing-zone {
+  display: block;
 }
 
 .tiketing-zone {
@@ -131,10 +139,17 @@
   padding: 2rem 3rem;
   font-size: 1.6rem;
   background-color: #f5f5f5;
+  border: 1px solid transparent;
+}
+
+.tiketing-zone > li.selected {
+  background-color: #da291c;
+  color: #fff;
 }
 
 .tiketing-area .select_theater {
   display: none;
+  cursor: default;
 }
 
 /******* tiketing date *******/
@@ -207,6 +222,10 @@
   border: 1px solid #ccc;
   text-align: center;
   cursor: pointer;
+}
+
+.tiketing-date_area.active {
+  border-color: #da291c;
 }
 
 .tiketing-date_area p {

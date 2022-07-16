@@ -10,6 +10,10 @@ const tiketingTab = document.querySelector(".tiketing-tab");
 const tabLiList = tiketingTab.getElementsByTagName("li");
 const movieOptionAll = document.querySelectorAll(".tiketing-area");
 
+const dayArea = document.querySelectorAll(".tiketing-date_area");
+const monthYear = document.querySelector(".tiketing-month");
+const weekDate = document.querySelectorAll(".date_value");
+const weekDay = document.querySelectorAll(".week_day");
 
 // 상영영화 리스트
 const movieList = [
@@ -58,9 +62,9 @@ function toggleLI(e) {
       e.classList.remove("active");
       e.setAttribute("data-active", "off")
 
-      for(let i = 0; i < getMovie.length; i++) {
-        getMovie[i].setAttribute("data-active", "off")
-      }
+      getMovie.forEach( item => {
+        item.setAttribute("data-active", "off");
+      })
 
     })
   }
@@ -68,14 +72,8 @@ function toggleLI(e) {
 }
 
 
-// function (e) {
-//   if(e.getAttribute("data-active") === "on"){
-
-//   }
-// }
-
 function creatMovie(e) {
-  console.log(e.target);
+  // console.log(e.target);
   let clickLi = e.currentTarget;
   let movieClassList = clickLi.classList;
 
@@ -83,9 +81,14 @@ function creatMovie(e) {
   if ( movieClassList.contains("active") === true ) {
     clickLi.classList.remove("active");
     
-    for(let i = 0; i < getMovie.length; i++) {
-    getMovie[i].setAttribute("data-active", "off")
-    }
+    // for(let i = 0; i < getMovie.length; i++) {
+    // getMovie[i].setAttribute("data-active", "off")
+    // }
+
+    getMovie.forEach( item => {
+      item.setAttribute("data-active", "off");
+    })
+
     creatName.textContent = '영화 제목';
     creatGrade.textContent = '영화 등급';
     creatImg.style.backgroundImage = "";
@@ -110,17 +113,6 @@ function creatMovie(e) {
 
 }
 
-
-// checkClass()s
-
-// function checkClass () {
-//   for(let i = 0; i < getMovie.length; i++) {
-//     let classList = getMovie[i].classList;
-//     console.log(classList.contains("active"))
-//   }
-// }
-
-
 for(let i = 0; i < tabLiList.length; i++) {
   tabLiList[i].addEventListener("click", activeTab)
 }
@@ -129,40 +121,125 @@ for(let i = 0; i < getMovie.length; i++) {
   getMovie[i].addEventListener("click", creatMovie)
 }
 
-
-
-
-// activeMovie.addEventListener("click", () => {
-//   activeMovie.classList.remove("active")
-// })
-
-
 /*--------------------------------------------------------------------*/
 
 const theaterList = document.querySelectorAll('.tiketing-area li');
+const subMenu = document.querySelectorAll('.tiketing-zone');
+// const subList = subMenu.getElementsByTagName('li');
+const theater = document.getElementById("selectTheater");
+let getTheater = "";
 
-
+// 영화관 지역 선택 depth 1
 function selectTheater (e) {
-  let depth1 = e.target;
-  for(let i = 0; i < theaterList.length; i++) {
-    theaterList[i].classList.remove('active');
+  let depth1 = e.currentTarget;
+
+  let depth1ClassLiist = depth1.classList;
+
+  theaterList.forEach( item => {
+    item.setAttribute("data-active", "on");
+  })
+
+  if ( depth1ClassLiist.contains("active") === true ) {
+    depth1.classList.remove("active");
+    theater.textContent = "선택극장";
+
+    for(let i = 0; i < subMenu.length; i++) {
+      let subList = subMenu[i].querySelectorAll("li");
+      subList.forEach( item => {
+        item.classList.remove("selected");
+      });
+    }
+
+    return;
   }
 
-  depth1.classList.add("active")
+  // for(let i = 0; i < theaterList.length; i++) {
+  //   theaterList[i].classList.remove('active');
+  // }
+  
+  theaterList.forEach( item => {
+    item.classList.remove('active');
+  })
+
+  if(depth1.className === "select_theater") {
+
+    return;
+  }
+  console.log(theater.textContent);
+
+  depth1.classList.add("active");
+
+  // console.log(theater.textContent);
 }
 
 for(let i = 0; i < theaterList.length; i++) {
   theaterList[i].addEventListener("click", selectTheater)
 }
 
+// 영화관 도시 선택 depth 2
+function selectZone (e) {
+  const depth2 = e.target;
+  // depth2.removeEventListener("click", selectTheater);
+  // const targetParent = e.target.parentElement.parentElement;
+  // console.log(depth2, targetParent);
+
+  let depth2ClassList = depth2.classList;
+
+  if ( depth2ClassList.contains("selected") === true ) {
+    depth2.classList.remove("selected");
+    theater.textContent = "선택극장";
+    return;
+  }
+  
+  for(let i = 0; i < subMenu.length; i++) {
+    let subList = subMenu[i].querySelectorAll("li");
+    subList.forEach( item => {
+      item.classList.remove("selected");
+    });
+  }
+
+  depth2.classList.add("selected");
+  theater.textContent = depth2.textContent;
+}
+
+for(let i = 0; i < subMenu.length; i++) {
+  let subList = subMenu[i].querySelectorAll("li");
+  subList.forEach( item => {
+    item.addEventListener("click",selectZone);
+  });
+}
+
+
+/*--------------------------------------------------------------------*/
+
+const creatDay = document.getElementById("selectDay");
+
+const selectDay = (e) => {
+  let area = e.currentTarget;
+  let areaClassList = area.classList;
+  if( areaClassList.contains("active") === true ){
+    area.classList.remove("active");
+    creatDay.textContent = "선택일시"
+    return;
+  }
+
+  dayArea.forEach( value => {
+      value.classList.remove("active");
+  });
+
+  area.classList.add("active");
+  let areaText = area.innerText.split("\n");
+
+  creatDay.textContent = `${areaText[0]} ${areaText[2]}`;
+}
+
+dayArea.forEach( value => {
+  value.addEventListener("click", selectDay)
+})
 /*--------------------------------------------------------------------*/
 // 날짜 업데이트
-
-const monthYear = document.querySelector(".tiketing-month");
-const weekDate = document.querySelectorAll(".date_value");
-const weekDay = document.querySelectorAll(".week_day");
 let now = new Date();
-console.log(now.getDate());
+
 for(let i = 0; i < weekDate.length; i++ ) {
   weekDate[i].textContent = now.getDate() + i;
 }

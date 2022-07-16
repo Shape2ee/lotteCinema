@@ -15,6 +15,8 @@
   <!-- style css -->
   <link rel="stylesheet" href="../css/basic.css">
   <link rel="stylesheet" href="./css/movie.css">
+  <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/movie_tablet.css">
+  <link rel="stylesheet" media="screen and (min-width:1440px)" href="./css/movie_pc.css">
 </head>
 <body>
     <!-- header -->
@@ -137,14 +139,33 @@
           <li>개봉예정작</li>
         </ul>
         <!-- dropdown -->
-        <form action="#">
+        <form action="#" id="form">
           <div class="movie-dropdown">
-            <button type="button" class="movie-dropdown_btn">예매순</button>
+            <button type="button" class="movie-dropdown_btn" value="default">
+              예매순
+            </button>
             <!-- dropdown menu -->
             <ul class="movie-dropdown_menu">
-              <li>평점순</li>
-              <li>관람평 많은순</li>
-              <li>보고싶어요순</li>
+              <li>
+                <button type="button" value="2" class="data">
+                  예매순
+                </button>
+              </li>
+              <li>
+                <button type="button" value="2" class="data">
+                  평점순
+                </button>
+              </li>
+              <li>
+                <button type="button" value="3" class="data">
+                  관람평 많은순
+                </button>
+              </li>
+              <li>
+                <button type="button" value="4" class="data">
+                  보고싶어요순
+                </button>
+              </li>
             </ul>
           </div>
         </form>
@@ -689,62 +710,6 @@
   <button id="goToTop"><span class="blind">위로</span></button>
   <!-- script -->
   <script src="../js/basic.js"></script>
-  <script>
-    const tab = document.querySelector(".movie-tab");
-    const tabLi = tab.getElementsByTagName("li");
-    const nowMovie = document.getElementById("now");
-    const comMovie = document.getElementById("comming");
-
-    const activeTap = (e) => {
-      const select = e.currentTarget;
-      for(let i = 0; i < tabLi.length; i++) {
-        tabLi[i].classList.remove("active");
-      }
-
-      select.classList.add("active");
-
-      if (tabLi[0].className === "active") {
-        nowMovie.classList.add("show");
-        comMovie.classList.remove("show");
-      } else {
-        comMovie.classList.add("show");
-        nowMovie.classList.remove("show");
-      }
-    }
-
-    for(let i = 0; i < tabLi.length; i++) {
-      tabLi[i].addEventListener("click", activeTap)
-    }
-
-    // -------------------------------------
-
-    const dropDown = document.querySelector(".movie-dropdown");
-    const dropDownBtn = document.querySelector(".movie-dropdown_btn");
-    const dropMenu = document.querySelector(".movie-dropdown_menu");
-    const menuList = dropMenu.getElementsByTagName("li");
-
-    dropDown.addEventListener("click", function () {
-      dropMenu.classList.toggle("show");
-      dropDownBtn.classList.toggle("selected");
-    })
-
-    dropDown.addEventListener("blur", function () {
-      dropMenu.classList.remove("show");
-      dropDownBtn.classList.toggle("selected");
-    })
-    
-    const selectOption = (e) => {
-      const value = e.target.textContent;
-      dropDownBtn.textContent = value;
-      dropMenu.classList.remove("show");
-      dropDownBtn.classList.toggle("selected");
-    }
-
-    for(let i = 0; i < menuList.length; i++) {
-      menuList[i].addEventListener("click", selectOption)
-    }
-
-
-  </script>
+  <script src="./js/movie.js"></script>
 </body>
 </html>

@@ -68,7 +68,7 @@ body {
   top: 0;
   left: 50%;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 99;
 }
 
@@ -93,6 +93,12 @@ body {
 .tiketing-zone > li {
   padding: 1.2rem 2rem;
   background-color: #fff;
+}
+.tiketing-zone > li:hover {
+  color: #da291c;
+}
+.tiketing-zone > li.selected:hover {
+  color: #fff;
 }
 
 /******* tiketing date *******/
