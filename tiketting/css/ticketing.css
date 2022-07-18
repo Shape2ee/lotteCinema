@@ -32,6 +32,7 @@
   position: relative;
   padding: 2rem 0 2rem 6.2rem;
   background: no-repeat 30px 50%;
+  border: 1px solid transparent;
   border-bottom: 1px solid #f5f5f5;
   font-size: 1.6rem;
   cursor: pointer;
@@ -115,15 +116,28 @@
   border: 1px solid transparent;
   font-size: 1.6rem;
   cursor: pointer;
-}
-
-/* .tiketing-area > li.active {
-  
-} */
-
-.tiketing-area.show .tiketing-zone {
   display: block;
 }
+/* 
+.tiketing-area > li:not(.active) {
+  display: none;
+} */
+
+.tiketing-area > li.active .tiketing-zone {
+  display: none;
+}
+
+.tiketing-area > li[data-active="on"].active .tiketing-zone {
+  display: block;
+  top: auto;
+  bottom: 0;
+}
+
+
+
+/* .tiketing-area.show .tiketing-zone {
+  display: block;
+} */
 
 .tiketing-zone {
   display: none;
@@ -380,7 +394,10 @@
 }
 
 .tiketing-select_date li em {
+  overflow: hidden;
   font-style: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .tiketing_seatBtn a {
@@ -403,6 +420,10 @@
   height: 16px;
   background: url(../../images/next_arrow.svg) 50% / contain;
   transition: transform 0.3s;
+}
+
+footer {
+  margin-bottom: 12rem;
 }
 
 #goToTop {

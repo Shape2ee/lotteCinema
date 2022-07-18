@@ -47,7 +47,7 @@
 .movie-tab {
   position: relative;
   display: flex;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #999;
 }
 
@@ -79,8 +79,8 @@
 
 .movie-dropdown {
   position: relative;
-  width: 150px;
-  font-size: 1.4rem;
+  width: 33.333vw;
+  max-width: 130px;
 }
 
 .movie-dropdown_btn {
@@ -93,7 +93,6 @@
   background-color: #f5f5f5;
   border: 1px solid transparent;
   font-size: 1.4rem;
-  text-align: left;
   cursor: pointer;
 }
 

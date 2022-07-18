@@ -32,13 +32,14 @@ const dropDown = document.querySelector(".movie-dropdown");
 const dropDownBtn = document.querySelector(".movie-dropdown_btn");
 const dropMenu = document.querySelector(".movie-dropdown_menu");
 const menuList = dropMenu.querySelectorAll("li");
+const isIos = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 dropDownBtn.addEventListener("click", function () {
   dropMenu.classList.toggle("show");
   dropDownBtn.classList.toggle("selected");
 })
 
-dropDownBtn.addEventListener("blur", function () {
+dropDownBtn.addEventListener(isIos === true ? 'mouseout' : 'blur', function () {
   dropMenu.classList.remove("show");
   dropDownBtn.classList.toggle("selected");
 })

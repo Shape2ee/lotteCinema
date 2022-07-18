@@ -25,6 +25,8 @@
   overflow-y: auto;
 }
 
+/* ::-webkit-scrollbar */
+
 /******* tiketing theater *******/
 .tiketing-theater {
   border-right: 1px solid #eee;
