@@ -129,6 +129,11 @@ function selectTheater (e) {
     depth1.classList.remove("active");
     theater.textContent = "선택극장";
 
+    
+    theaterList.forEach( item => {
+      item.setAttribute("data-active", "off");
+    })
+
     let subList = "";
     removeSelect (subMenu, subList);
 
@@ -145,6 +150,7 @@ function selectTheater (e) {
 
 
   depth1.classList.add("active");
+  depth1.setAttribute("data-active", "select");
 }
 
 for(let i = 0; i < theaterList.length; i++) {

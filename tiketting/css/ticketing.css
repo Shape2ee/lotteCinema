@@ -117,27 +117,34 @@
   font-size: 1.6rem;
   cursor: pointer;
   display: block;
+  overflow: hidden;
+  /* max-height: 60vh; */
 }
-/* 
-.tiketing-area > li:not(.active) {
+
+.tiketing-area > li[data-active="on"] {
   display: none;
-} */
+}
 
 .tiketing-area > li.active .tiketing-zone {
   display: none;
 }
 
-.tiketing-area > li[data-active="on"].active .tiketing-zone {
+.tiketing-area > li[data-active="select"],
+.tiketing-area > li[data-active="off"] {
   display: block;
-  top: auto;
-  bottom: 0;
+  
 }
 
-
-
-/* .tiketing-area.show .tiketing-zone {
+.tiketing-area > li[data-active="select"].active .tiketing-zone {
   display: block;
-} */
+  position: static;
+  margin-top: 2rem;
+  max-height: 50vh;
+  overflow-y: auto;
+  /* top: auto; */
+  
+  /* bottom: 0; */
+}
 
 .tiketing-zone {
   display: none;
@@ -161,7 +168,8 @@
   color: #fff;
 }
 
-.tiketing-area .select_theater {
+.tiketing-area > li.select_theater,
+.tiketing-area > li[data-active="off"].select_theater {
   display: none;
   cursor: default;
 }
@@ -199,7 +207,6 @@
   position: absolute;
   top: 50%;
   width: 100%;
-  /* padding: 0 4rem; */
 }
 
 .tiketing-prev,
