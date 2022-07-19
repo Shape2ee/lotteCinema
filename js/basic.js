@@ -55,7 +55,6 @@ const scrollUpDown = () => {
 };
 
 window.addEventListener("scroll", scrollUpDown);
-// window.addEventListener("scroll", createLine);
 
 /*********** mobile menu ***********/
 const mobileMenu = document.getElementById("m_gnb");

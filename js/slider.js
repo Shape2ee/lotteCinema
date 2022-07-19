@@ -1,17 +1,21 @@
 'use strict';
 
 const getSlider = document.querySelector(".slider-pagination");
-const paginationLi = getSlider.getElementsByTagName("li");
+const paginationLi = getSlider.querySelectorAll("li");
 const imgList = document.querySelector(".slider-wrap");
 let checkSlide = 0;
 let getTransformValue = 0;
 
 /*********** 클릭시 슬라이드 함수***********/
 const transSlide = event => {
-  for(let i = 0; i < paginationLi.length; i++){
-    paginationLi[i].classList.remove("active"); // slider-pagination의 active class 지우기
-  }
+  // for(let i = 0; i < paginationLi.length; i++){
+  //   paginationLi[i].classList.remove("active"); // slider-pagination의 active class 지우기
+  // }
   
+  paginationLi.forEach(item => {
+    item.classList.remove("active");
+  });
+
   const selectLi = event.currentTarget;
   selectLi.classList.add("active"); // slider-pagination의 active class 추가
 
