@@ -11,9 +11,11 @@ Lotte Cinema
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/>
 
 ## 작업페이지
-1. [Main, 메인 페이지](https://shape2ee.github.io/lotteCinema){:target="_blank"}
-2. [Movie, 영화 페이지](https://shape2ee.github.io/lotteCinema/movie/movie.html){:target="_blank"}
-3. [Tiketing, 예매하기 페이지](https://shape2ee.github.io/lotteCinema/tiketting/tiketing.html){:target="_blank"}
+
+<!-- 1. [Main, 메인 페이지](https://shape2ee.github.io/lotteCinema) -->
+1. <a href="https://shape2ee.github.io/lotteCinema" target="_blank">Main, 메인 페이지</a>
+2. [Movie, 영화 페이지](https://shape2ee.github.io/lotteCinema/movie/movie.html){: target="_blank"}
+3. [Tiketing, 예매하기 페이지](https://shape2ee.github.io/lotteCinema/tiketting/tiketing.html){: target="_blank"}
 
 ## 느낀점 & 힘들었던 점
 - BEM방식의 네이밍 방식을 적용하겠다는 생각을 가지고 작업 하였고, 적용은 시켰지만 헷갈리는 부분이 css에서나 class네이밍에 있어 완벽하게 하지는 못한거 같아 개인적으로는 아쉽습니다. 공부를 더 해야할 것 같습니다.
