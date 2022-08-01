@@ -48,7 +48,6 @@ menuList.forEach( function (item) {
   item.addEventListener('click', selectOption)
 });
 
-
 function selectOption () {
   const value = this.textContent;
   dropDownBtn.textContent = value;

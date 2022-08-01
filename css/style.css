@@ -296,7 +296,7 @@ section {
 #preview {
   margin: 0 2rem;
   padding: 10rem 0;
-  background: #f5f5f5 url(../images/bg.svg) no-repeat 60% 20% / cover;
+  background: #f5f5f5 url(../images/bg.svg) fixed no-repeat 60% 20% / cover;
 }
 
 #preview .main-title {
