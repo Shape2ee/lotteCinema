@@ -130,3 +130,83 @@ for(let i = 0; i < dragimgList.length; i++) {
   dragimgList[i].addEventListener("touchstart", touchStart);
 }
 */
+
+/*--------------------------------------------------------*/
+// best Movie
+
+const movieWrap = document.querySelector(".best_movie-wrap");
+const movieContainer = document.querySelector(".best_movie-container");
+const movieList = document.querySelectorAll(".best_movie-content");
+
+
+const prevBtnAll = document.querySelectorAll(".prevBtn");
+const nextBtnAll = document.querySelectorAll(".nextBtn");
+
+let activeLi = 0;
+
+
+function transformSlide (list, wrapper, data) {
+  for(let i = 0; i < list.length; i++) {
+    list[i].style.transform = "translateX(" + data + "px)";
+    list[i].style.transition = "transform 1s";
+  }
+  wrapper.setAttribute("data-position", data);
+}
+
+const slideNext = (e) => {
+  const current = e.target;
+  const prevtBtn = current.previousElementSibling;
+  prevtBtn.style.display = "block";
+  
+  console.log(current)
+  const slideTarget = current.parentElement.previousElementSibling;
+  const slideList = current.parentElement.previousElementSibling.children;
+  const slideItem = current.parentElement.previousElementSibling.firstElementChild;
+  let dataPosition = slideTarget.getAttribute('data-position');
+  let transItem = slideList.length * slideItem.clientWidth + Number(dataPosition);
+  console.log(dataPosition, slideTarget)
+
+  console.log(slideTarget.clientWidth, transItem)
+  if(slideTarget.clientWidth < slideList.length * slideItem.clientWidth + Number(dataPosition)) {
+    dataPosition = Number(dataPosition) - slideItem.clientWidth - 20
+
+    if(slideTarget.clientWidth > slideList.length * slideItem.clientWidth + Number(dataPosition)) {
+      console.log('akakak')
+      current.style.display = "none"
+    } else {
+      current.style.display = "block"
+    }
+  }
+
+  transformSlide(slideList, slideTarget, dataPosition)
+}
+
+const slidePrev = (e) => {
+  const current = e.target;
+  const nextBtn = current.nextElementSibling;
+  nextBtn.style.display = "block";
+
+  console.log(current)
+  const slideTarget = current.parentElement.previousElementSibling;
+  const slideList = current.parentElement.previousElementSibling.children;
+  const slideItem = current.parentElement.previousElementSibling.firstElementChild;
+  let dataPosition = slideTarget.getAttribute('data-position');  
+
+  if(Number(dataPosition) < 0) {
+    dataPosition = Number(dataPosition) + slideItem.clientWidth + 20
+
+    if(Number(dataPosition === 0)) {
+      console.log('akakak')
+      current.style.display = "none"
+    }
+  }
+    transformSlide(slideList, slideTarget, dataPosition)
+}
+
+prevBtnAll.forEach( prev => {
+  prev.addEventListener("click", slidePrev)
+})
+
+nextBtnAll.forEach( next => {
+  next.addEventListener("click", slideNext)
+})

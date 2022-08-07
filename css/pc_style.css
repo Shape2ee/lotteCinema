@@ -63,8 +63,7 @@ section {
 }
 
 #best_movie .best_movie-content {
-  width: calc(25% - 2.25rem);
-  margin-right: 3rem;
+  width: calc(25% - 1.5rem);
 }
 
 #best_movie .best_movie-img:hover .best_movie-img-over {
