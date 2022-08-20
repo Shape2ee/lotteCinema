@@ -1,555 +1,718 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>롯데시네마</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다.">
-  <meta name="Keywords" content="롯데시네마, LOTTE CINEMA, 시네마, CINEMA, 영화, 영화관, 극장, Movie, Theater, 예매, 현재상영작, 상영예정작, 개봉영화, 영화예매, 상영시간표" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>롯데시네마</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다."
+    />
+    <meta
+      name="Keywords"
+      content="롯데시네마, LOTTE CINEMA, 시네마, CINEMA, 영화, 영화관, 극장, Movie, Theater, 예매, 현재상영작, 상영예정작, 개봉영화, 영화예매, 상영시간표"
+    />
 
-  <!-- open graph -->
-  <meta property="og:title" content="롯데시네마">
-  <meta property="og:url" content="https://shape2ee.github.io/lotteCinema">
-  <!-- <meta property="og:image" content=""> -->
-  <meta property="og:description" content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다.">
-  <meta property="og:type" content="website">
+    <!-- open graph -->
+    <meta property="og:title" content="롯데시네마" />
+    <meta property="og:url" content="https://shape2ee.github.io/lotteCinema" />
+    <!-- <meta property="og:image" content=""> -->
+    <meta
+      property="og:description"
+      content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다."
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- twitter open graph -->  
-  <meta name="twitter:card" content="Summary">
-  <meta name="twitter:creator" content="shape2ee">
-  <meta name="twitter:url" content="https://shape2ee.github.io/lotteCinema">
-  <meta name="twitter:title" content="롯데시네마">
-  <meta name="twitter:description" content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다.">
-  <!-- <meta name="twitter:image" content=""> -->
+    <!-- twitter open graph -->
+    <meta name="twitter:card" content="Summary" />
+    <meta name="twitter:creator" content="shape2ee" />
+    <meta name="twitter:url" content="https://shape2ee.github.io/lotteCinema" />
+    <meta name="twitter:title" content="롯데시네마" />
+    <meta
+      name="twitter:description"
+      content="롯데시네마 사이트 반응형 리디자인 웹사이트 입니다."
+    />
+    <!-- <meta name="twitter:image" content=""> -->
 
-  <!-- reset css -->
-  <link rel="stylesheet" href="./css/minireset.min.css">
-  <!-- web font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/minireset.min.css" />
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- style css -->
-  <link rel="stylesheet" href="./css/basic.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/tablet_style.css">
-  <link rel="stylesheet" media="screen and (min-width: 1440px)" href="./css/pc_style.css">
-</head>
-<body>
-  <!-- skip navigation -->
-  <div class="skip_nav">
-    <a href="#best_movie">본문 바로가기</a>
-  </div>
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="./css/tablet_style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1440px)"
+      href="./css/pc_style.css"
+    />
+  </head>
+  <body>
+    <!-- skip navigation -->
+    <div class="skip_nav">
+      <a href="#best_movie">본문 바로가기</a>
+    </div>
 
-  <!-- header -->
-  <header id="header">
-    <h1 class="logo"><a href="./index.html"><span class="blind">롯데시네마</span></a></h1>
-    <!-- gnb -->
-    <ul id="gnb">
-      <li class="link">
-        <a href="./tiketting/tiketing.html">예매</a>
-        <ul>
-          <li><a href="./tiketting/tiketing.html">예매하기</a></li>
-          <li><a href="#">상영시간표</a></li>
-          <li><a href="#">할인안내</a></li>
-        </ul>
-      </li>
-      <li class="link">
-        <a href="./movie/movie.html">영화</a>
-        <ul>
-          <li><a href="./movie/movie.html">홈</a></li>
-          <li><a href="#">현재상영작</a></li>
-          <li><a href="#">상영예정작</a></li>
-          <li><a href="#">아르떼</a></li>
-          <li><a href="#">국립국장</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">영화관</a>
-        <ul>
-          <li><a href="#">스페셜관</a></li>
-          <li><a href="#">서울</a></li>
-          <li><a href="#">경기/인천</a></li>
-          <li><a href="#">충청/대전</a></li>
-          <li><a href="#">전라/광주</a></li>
-          <li><a href="#">경북/대구</a></li>
-          <li><a href="#">경남/부산/울산</a></li>
-          <li><a href="#">강원</a></li>
-          <li><a href="#">제주</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">이벤트</a>
-        <ul>
-          <li><a href="#">홈</a></li>
-          <li><a href="#">영화</a></li>
-          <li><a href="#">시사회/무대인사</a></li>
-          <li><a href="#">HOT</a></li>
-          <li><a href="#">제휴할인</a></li>
-          <li><a href="#">우리동네영화관</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">스토어</a>
-        <ul>
-          <li><a href="#">베스트</a></li>
-          <li><a href="#">관람권</a></li>
-          <li><a href="#">스낵음료</a></li>
-          <li><a href="#">포토카드</a></li>
-        </ul>
-      </li>
-      <li><a href="#">멤버십</a></li>
-    </ul>
-    <!-- mobile gnb -->
-    <nav id="m_gnb" class="m_gnb">
-      <div class="m_gnb-head">
-        <h3><a href="#"><span class="blind">로고</span></a></h3>
-        <div class="x_btn"><span class="blind">닫기</span></div>
-      </div>
-      <ul class="m_gnb-menu">
-        <li class="link"><a href="./movie/movie.html">영화</a></li>
-        <li><a href="#">영화관</a></li>
-        <li><a href="#">스페셜관</a></li>
-        <li><a href="#">이벤트</a></li>
-        <li><a href="#">스토어</a></li>
-        <li><a href="#">클럽</a></li>
+    <!-- header -->
+    <header id="header">
+      <h1 class="logo">
+        <a href="./index.html"><span class="blind">롯데시네마</span></a>
+      </h1>
+      <!-- gnb -->
+      <ul id="gnb">
+        <li class="link">
+          <a href="./tiketting/tiketing.html">예매</a>
+          <ul>
+            <li><a href="./tiketting/tiketing.html">예매하기</a></li>
+            <li><a href="#">상영시간표</a></li>
+            <li><a href="#">할인안내</a></li>
+          </ul>
+        </li>
+        <li class="link">
+          <a href="./movie/movie.html">영화</a>
+          <ul>
+            <li><a href="./movie/movie.html">홈</a></li>
+            <li><a href="#">현재상영작</a></li>
+            <li><a href="#">상영예정작</a></li>
+            <li><a href="#">아르떼</a></li>
+            <li><a href="#">국립국장</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">영화관</a>
+          <ul>
+            <li><a href="#">스페셜관</a></li>
+            <li><a href="#">서울</a></li>
+            <li><a href="#">경기/인천</a></li>
+            <li><a href="#">충청/대전</a></li>
+            <li><a href="#">전라/광주</a></li>
+            <li><a href="#">경북/대구</a></li>
+            <li><a href="#">경남/부산/울산</a></li>
+            <li><a href="#">강원</a></li>
+            <li><a href="#">제주</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">이벤트</a>
+          <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">시사회/무대인사</a></li>
+            <li><a href="#">HOT</a></li>
+            <li><a href="#">제휴할인</a></li>
+            <li><a href="#">우리동네영화관</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">스토어</a>
+          <ul>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">관람권</a></li>
+            <li><a href="#">스낵음료</a></li>
+            <li><a href="#">포토카드</a></li>
+          </ul>
+        </li>
         <li><a href="#">멤버십</a></li>
-        <li><a href="#">공지사항</a></li>
-        <li><a href="#">포토카드</a></li>
+      </ul>
+      <!-- mobile gnb -->
+      <nav id="m_gnb" class="m_gnb">
+        <div class="m_gnb-head">
+          <h3>
+            <a href="#"><span class="blind">로고</span></a>
+          </h3>
+          <div class="x_btn"><span class="blind">닫기</span></div>
+        </div>
+        <ul class="m_gnb-menu">
+          <li class="link"><a href="./movie/movie.html">영화</a></li>
+          <li><a href="#">영화관</a></li>
+          <li><a href="#">스페셜관</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">스토어</a></li>
+          <li><a href="#">클럽</a></li>
+          <li><a href="#">멤버십</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">포토카드</a></li>
+          <li><a href="#">단체관람/대관문의</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <ul class="m_gnb-utill">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li class="link"><a href="./tiketting/tiketing.html">바로예매</a></li>
+        </ul>
+      </nav>
+
+      <!-- utill -->
+      <ul id="utill">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">바로예매</a></li>
         <li><a href="#">단체관람/대관문의</a></li>
         <li><a href="#">고객센터</a></li>
       </ul>
-      <ul class="m_gnb-utill">
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
-        <li class="link"><a href="./tiketting/tiketing.html">바로예매</a></li>
-      </ul>
-    </nav>
-
-    <!-- utill -->
-    <ul id="utill">
-      <li><a href="#">로그인</a></li>
-      <li><a href="#">회원가입</a></li>
-      <li><a href="#">바로예매</a></li>
-      <li><a href="#">단체관람/대관문의</a></li>
-      <li><a href="#">고객센터</a></li>
-    </ul>
-    <!-- header icon -->
-    <div class="menu_icon"><span class="blind">메뉴</span></div>
-    <div class="serch_icon"><span class="blind">검색</span></div>
-    <!-- serch-wrap -->
-    <div id="serch">
-      <div class="serch-wrap">
-        <form action="#" method="post" id="serch_form">
-          <input type="text" name="serch" id="serch_box" placeholder="Search...">
-          <button type="submit" id="serch_btn" formtarget="_blank"><span  class="blind">검색</span></button>
-        </form>
-        <div class="x_btn"><span class="blind">닫기</span></div>
-      </div>
-    </div>
-  </header>
-
-  <!-- main_banner -->
-  <article>
-    <h2 class="blind">광고영역</h2>
-    <div class="slider">
-      <ul class="slider-pagination">
-        <li id="slider-value1" class="active" data-value="1">
-          <span>01</span>
-          <div class="pagination-title">
-            칸영화제 12분간의 기립박수<span class="block">엘비스</span>
-          </div>
-        </li>
-        <li id="slider-value2" data-value="2">
-          <span>02</span>
-          <div class="pagination-title">
-            우주최고의 '갓' 매치가 시작된다<span class="block">토르: 러브 앤 썬더</span>
-          </div>
-        </li>
-        <li id="slider-value3" data-value="3">
-          <span>03</span>
-          <div class="pagination-title">
-            2021 여우락 페스티벌 개막작<span class="block">두개의 눈</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="slider-wrap" data-position="0">
-        <li><a href="#"><span class="blind">엘비스</span></a></li>
-        <li><a href="#"><span class="blind">토르</span></a></li>
-        <li><a href="#"><span class="blind">두개의 눈</span></a></li>
-      </ul>
-    </div>
-  </article>
-
-  <!-- main -->
-  <main>
-    <!-- best_movie -->
-    <section id="best_movie" >
-      <div class="main-title">
-        <h2>best movie</h2>
-        <p>지금 가장 인기있는 작품을 소개합니다.</p>
-      </div>
-      <div class="best_movie-wrap">
-        <div class="best_movie-container" data-position="0">
-          <div class="best_movie-content">
-            <div class="best_movie-img">
-              <img src="./images/movie_1.jpg" alt="탑건: 매버릭">
-              <div class="best_movie-img-over">
-                <a href="#" class="ticketing">예매하기</a>
-                <a href="#" class="movie_more">상세보기</a>
-                <button class="like"><span class="blind">좋아요</span></button>
-              </div>
-            </div>
-            <h3 class="best_movie-tit"><a href="#">탑건: 매버릭</a></h3>
-            <p>예매율 50.8%</p>
-            <span class="best_movie-sub_txt best_movie-sub_txt-star">9.8</span>
-          </div>
-          <div class="best_movie-content">
-            <div class="best_movie-img">
-              <img src="./images/movie_2.jpg" alt="토르: 러브 앤 썬더">
-              <div class="best_movie-img-over">
-                <a href="#" class="ticketing">예매하기</a>
-                <a href="#" class="movie_more">상세보기</a>
-                <button class="like"><span class="blind">좋아요</span></button>
-              </div>
-            </div>
-            <h3 class="best_movie-tit"><a href="#">토르: 러브 앤 썬더</a></h3>
-            <p>예매율 18.5%</p>
-            <span class="best_movie-sub_txt d_day">d-5</span>
-          </div>
-          <div class="best_movie-content">
-            <div class="best_movie-img">
-              <img src="./images/movie_3.jpg" alt="헤어질 결심">
-              <div class="best_movie-img-over">
-                <a href="#" class="ticketing">예매하기</a>
-                <a href="#" class="movie_more">상세보기</a>
-                <button class="like"><span class="blind">좋아요</span></button>
-              </div>
-            </div>
-            <h3 class="best_movie-tit"><a href="#">헤어질 결심</a></h3>
-            <p>예매율 15.4%</p>
-            <span class="best_movie-sub_txt best_movie-sub_txt-star">9.5</span>
-          </div>
-          <div class="best_movie-content">
-            <div class="best_movie-img">
-              <img src="./images/movie_4.jpg" alt="마녀2">
-              <div class="best_movie-img-over">
-                <a href="#" class="ticketing">예매하기</a>
-                <a href="#" class="movie_more">상세보기</a>
-                <button class="like"><span class="blind">좋아요</span></button>
-              </div>
-            </div>
-            <h3 class="best_movie-tit"><a href="#">마녀(魔女) Part2. The Other One</a></h3>
-            <p>예매율 1.9%</p>
-            <span class="best_movie-sub_txt best_movie-sub_txt-star">8.2</span>
-          </div>
-          <div class="best_movie-content">
-            <div class="best_movie-img">
-              <img src="./images/movie_4.jpg" alt="마녀2">
-              <div class="best_movie-img-over">
-                <a href="#" class="ticketing">예매하기</a>
-                <a href="#" class="movie_more">상세보기</a>
-                <button class="like"><span class="blind">좋아요</span></button>
-              </div>
-            </div>
-            <h3 class="best_movie-tit"><a href="#">마녀(魔女) Part2. The Other One</a></h3>
-            <p>예매율 1.9%</p>
-            <span class="best_movie-sub_txt best_movie-sub_txt-star">8.2</span>
-          </div>
+      <!-- header icon -->
+      <div class="menu_icon"><span class="blind">메뉴</span></div>
+      <div class="serch_icon"><span class="blind">검색</span></div>
+      <!-- serch-wrap -->
+      <div id="serch">
+        <div class="serch-wrap">
+          <form action="#" method="post" id="serch_form">
+            <input
+              type="text"
+              name="serch"
+              id="serch_box"
+              placeholder="Search..."
+            />
+            <button type="submit" id="serch_btn" formtarget="_blank">
+              <span class="blind">검색</span>
+            </button>
+          </form>
+          <div class="x_btn"><span class="blind">닫기</span></div>
         </div>
-        <div class="slide-arrow">
-          <div class="slide-prev prevBtn"><span class="blind">이전</span></div>
-          <div class="slide-next nextBtn"><span class="blind">다음</span></div>
+      </div>
+    </header>
+
+    <!-- main_banner -->
+    <article>
+      <h2 class="blind">광고영역</h2>
+      <div class="slider">
+        <ul class="slider-pagination">
+          <li id="slider-value1" class="active" data-value="1">
+            <span>01</span>
+            <div class="pagination-title">
+              칸영화제 12분간의 기립박수<span class="block">엘비스</span>
+            </div>
+          </li>
+          <li id="slider-value2" data-value="2">
+            <span>02</span>
+            <div class="pagination-title">
+              우주최고의 '갓' 매치가 시작된다<span class="block"
+                >토르: 러브 앤 썬더</span
+              >
+            </div>
+          </li>
+          <li id="slider-value3" data-value="3">
+            <span>03</span>
+            <div class="pagination-title">
+              2021 여우락 페스티벌 개막작<span class="block">두개의 눈</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="slider-wrap" data-position="0">
+          <li>
+            <a href="#"><span class="blind">엘비스</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="blind">토르</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="blind">두개의 눈</span></a>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- main -->
+    <main>
+      <!-- best_movie -->
+      <section id="best_movie">
+        <div class="main-title">
+          <h2>best movie</h2>
+          <p>지금 가장 인기있는 작품을 소개합니다.</p>
         </div>
+        <div class="best_movie-wrap">
+          <div class="best_movie-container" data-position="0">
+            <div class="best_movie-content">
+              <div class="best_movie-img">
+                <img src="./images/movie_1.jpg" alt="탑건: 매버릭" />
+                <div class="best_movie-img-over">
+                  <a href="#" class="ticketing">예매하기</a>
+                  <a href="#" class="movie_more">상세보기</a>
+                  <button class="like">
+                    <span class="blind">좋아요</span>
+                  </button>
+                </div>
+              </div>
+              <h3 class="best_movie-tit"><a href="#">탑건: 매버릭</a></h3>
+              <p>예매율 50.8%</p>
+              <span class="best_movie-sub_txt best_movie-sub_txt-star"
+                >9.8</span
+              >
+            </div>
+            <div class="best_movie-content">
+              <div class="best_movie-img">
+                <img src="./images/movie_2.jpg" alt="토르: 러브 앤 썬더" />
+                <div class="best_movie-img-over">
+                  <a href="#" class="ticketing">예매하기</a>
+                  <a href="#" class="movie_more">상세보기</a>
+                  <button class="like">
+                    <span class="blind">좋아요</span>
+                  </button>
+                </div>
+              </div>
+              <h3 class="best_movie-tit"><a href="#">토르: 러브 앤 썬더</a></h3>
+              <p>예매율 18.5%</p>
+              <span class="best_movie-sub_txt d_day">d-5</span>
+            </div>
+            <div class="best_movie-content">
+              <div class="best_movie-img">
+                <img src="./images/movie_3.jpg" alt="헤어질 결심" />
+                <div class="best_movie-img-over">
+                  <a href="#" class="ticketing">예매하기</a>
+                  <a href="#" class="movie_more">상세보기</a>
+                  <button class="like">
+                    <span class="blind">좋아요</span>
+                  </button>
+                </div>
+              </div>
+              <h3 class="best_movie-tit"><a href="#">헤어질 결심</a></h3>
+              <p>예매율 15.4%</p>
+              <span class="best_movie-sub_txt best_movie-sub_txt-star"
+                >9.5</span
+              >
+            </div>
+            <div class="best_movie-content">
+              <div class="best_movie-img">
+                <img src="./images/movie_4.jpg" alt="마녀2" />
+                <div class="best_movie-img-over">
+                  <a href="#" class="ticketing">예매하기</a>
+                  <a href="#" class="movie_more">상세보기</a>
+                  <button class="like">
+                    <span class="blind">좋아요</span>
+                  </button>
+                </div>
+              </div>
+              <h3 class="best_movie-tit">
+                <a href="#">마녀(魔女) Part2. The Other One</a>
+              </h3>
+              <p>예매율 1.9%</p>
+              <span class="best_movie-sub_txt best_movie-sub_txt-star"
+                >8.2</span
+              >
+            </div>
+            <div class="best_movie-content">
+              <div class="best_movie-img">
+                <img src="./images/movie_5.jpg" alt="범죄도시 2" />
+                <div class="best_movie-img-over">
+                  <a href="#" class="ticketing">예매하기</a>
+                  <a href="#" class="movie_more">상세보기</a>
+                  <button class="like">
+                    <span class="blind">좋아요</span>
+                  </button>
+                </div>
+              </div>
+              <h3 class="best_movie-tit"><a href="#">범죄도시2</a></h3>
+              <p>예매율 1.5%</p>
+              <span class="best_movie-sub_txt best_movie-sub_txt-star"
+                >9.2</span
+              >
+            </div>
+          </div>
+          <div class="slide-arrow">
+            <div class="slide-prev prevBtn">
+              <span class="blind">이전</span>
+            </div>
+            <div class="slide-next nextBtn">
+              <span class="blind">다음</span>
+            </div>
+          </div>
+          <ul class="main-pagination">
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <!-- 시사회/무대인사 -->
+      <section id="preview">
+        <div class="main-title">
+          <h2>시사회/무대인사</h2>
+          <p>롯데시네마가 준비한 특별한 시간</p>
+        </div>
+        <ul class="preview-tab">
+          <li class="active"><h3>시사회</h3></li>
+          <li><h3>무대인사</h3></li>
+        </ul>
+        <ul class="preview-container">
+          <li id="preview1" class="preview-content active">
+            <div class="preview-box" data-position="0">
+              <div class="preview-img">
+                <img src="./images/preview_img1.png" alt="체리마호 스폐셜 GV" />
+              </div>
+              <div class="preview-txt">
+                <em>시사회</em>
+                <h4>
+                  롯데시네마와 함께하는<span class="block"
+                    >체리마호 스페셜 GV</span
+                  >
+                </h4>
+                <p>
+                  마법이 이어준 소중함 마음, 순도 100% 하트워밍 로맨스
+                  '체리마호' 카자마 히로키 감독, 카나미 혼마 PD와 함께하는
+                  스페셜 GV! 지금 바로 예매하세요!
+                </p>
+                <a href="#" class="ghost_btn">예매하기</a>
+              </div>
+            </div>
+            <div class="slide-arrow preview-arrow">
+              <div class="slide-prev preview-prev">
+                <span class="blind">이전</span>
+              </div>
+              <div class="slide-next preview-next">
+                <span class="blind">다음</span>
+              </div>
+            </div>
+          </li>
+          <li id="preview2" class="preview-content">
+            <div class="preview-box">
+              <div class="preview-img">
+                <img src="./images/preview_img2.jpg" alt="마녀2" />
+              </div>
+              <div class="preview-txt">
+                <em>무대인사</em>
+                <h4>
+                  '마녀2' 흥행 기념 앵콜 <span class="block">무대인사</span>
+                </h4>
+                <p>
+                  롯데시네마와 함께하는 '마녀2' 흥행 감사 앵콜 무대인사! 박훈정
+                  감독, 신시아,서은수, 저스틴하비,채원빈,서이라,정라엘, 김기해와
+                  함께하는 특별한 시간이 여러분을 찾아옵니다.
+                </p>
+                <a href="#" class="ghost_btn">예매하기</a>
+              </div>
+            </div>
+            <div class="slide-arrow preview-arrow">
+              <div class="slide-prev preview-prev">
+                <span class="blind">이전</span>
+              </div>
+              <div class="slide-next preview-next">
+                <span class="blind">다음</span>
+              </div>
+            </div>
+          </li>
+        </ul>
         <ul class="main-pagination">
           <li></li>
           <li></li>
         </ul>
-      </div>
-    </section>
-    <!-- 시사회/무대인사 -->
-    <section id="preview">
-      <div class="main-title">
-        <h2>시사회/무대인사</h2>
-        <p>롯데시네마가 준비한 특별한 시간</p>
-      </div>
-      <ul class="preview-tab">
-        <li class="active"><h3>시사회</h3></li>
-        <li><h3>무대인사</h3></li>
-      </ul>
-      <ul class="preview-container">
-        <li id="preview1" class="preview-content active">
-          <div class="preview-box" data-position="0">
-            <div class="preview-img">
-              <img src="./images/preview_img1.png" alt="체리마호 스폐셜 GV">
-            </div>
-            <div class="preview-txt">
-              <em>시사회</em>
-              <h4>롯데시네마와 함께하는<span class="block">체리마호 스페셜 GV</span></h4>
-              <p>마법이 이어준 소중함 마음, 순도 100% 하트워밍 로맨스 '체리마호' 카자마 히로키 감독, 카나미 혼마 PD와 함께하는 스페셜 GV! 지금 바로 예매하세요!</p>
-              <a href="#" class="ghost_btn">예매하기</a>
-            </div>
-          </div>
-          <div class="slide-arrow preview-arrow">
-            <div class="slide-prev preview-prev"><span class="blind">이전</span></div>
-            <div class="slide-next preview-next"><span class="blind">다음</span></div>
-          </div>
-        </li>
-        <li id="preview2" class="preview-content ">
-          <div class="preview-box">
-            <div class="preview-img">
-              <img src="./images/preview_img2.jpg" alt="마녀2">
-            </div>
-            <div class="preview-txt">
-              <em>무대인사</em>
-              <h4>'마녀2' 흥행 기념 앵콜 <span class="block">무대인사</span></h4>
-              <p>롯데시네마와 함께하는 '마녀2' 흥행 감사 앵콜 무대인사! 박훈정 감독, 신시아,서은수, 저스틴하비,채원빈,서이라,정라엘, 김기해와 함께하는 특별한 시간이 여러분을 찾아옵니다.</p>
-              <a href="#" class="ghost_btn">예매하기</a>
-            </div>
-          </div>
-          <div class="slide-arrow preview-arrow">
-            <div class="slide-prev preview-prev"><span class="blind">이전</span></div>
-            <div class="slide-next preview-next"><span class="blind">다음</span></div>
-          </div>
-        </li>
-      </ul>
-      <ul class="main-pagination">
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-    <!-- 상영예정작 -->
-    <section id="new_movie">
-      <div class="main-title">
-        <h2>상영예정작</h2>
-        <p>새로 함께하는 영화들을 만나보세요</p>
-      </div>
-      <div class="new_movie-wrap">
-        <div class="new_movie-container" data-position="0">
-          <div class="new_movie-content">
-            <div class="new_movie-img_tit">
-              <img src="./images/new_1.png" alt="토르: 러브 앤 썬더">
-              <div class="new_movie-tit">
-                <em>2022.07.06 개봉<span class="d_day">d-4</span></em>
-                <h3>토르: 러브 앤 썬더</h3>
-              </div>
-            </div>
-            <p>“신을 죽이는 자, 신이 상대한다!” 슈퍼 히어로 시
-              절이여, 안녕! 이너피스를 위해 자아 찾기 여정을 
-              떠난 천둥의 신 ‘토르’ 그러나, 우주의 모든 신</p>
-            <a href="#" class="more">상세보기</a>
-          </div>
-          <div class="new_movie-content">
-            <div class="new_movie-img_tit">
-              <img src="./images/new_2.png" alt="미니언즈2">
-              <div class="new_movie-tit">
-                <em>2022.07.20 개봉<span class="d_day">d-19</span></em>
-                <h3>미니언즈 2</h3>
-              </div>
-            </div>
-            <p>세계 최고의 슈퍼 악당을 꿈꾸는 미니보스 ‘그루’와 그를 따라다니는 미니언들. 어느 날 그루는 최고의 악당 조직 ‘빌런6’의 마법 스톤을 훔치는데 성공하지만 뉴페이스 미니언 ‘오토’의 실수로 스톤을 잃어... 버리고 빌런6에게 납치까지 당한</p>
-            <a href="#" class="more">상세보기</a>
-          </div>
-          <div class="new_movie-content">
-            <div class="new_movie-img_tit">
-              <img src="./images/new_3.png" alt="한산: 용의 출현">
-              <div class="new_movie-tit">
-                <em>2022.07.27 개봉<span class="d_day">d-26</span></em>
-                <h3>한산: 용의 출현</h3>
-              </div>
-            </div>
-            <p>나라의 운명을 바꿀 압도적 승리의  전투가 시작된다! 1592년 4월, 조선은 임진왜란 발발 후 단 15일만에 왜군에 한양을 빼앗기며 절체절명의 위기에 놓인다.</p>
-            <a href="#" class="more">상세보기</a>
-          </div>
-          <div class="new_movie-content">
-            <div class="new_movie-img_tit">
-              <img src="./images/new_1.png" alt="토르: 러브 앤 썬더">
-              <div class="new_movie-tit">
-                <em>2022.07.06 개봉<span class="d_day">d-4</span></em>
-                <h3>토르: 러브 앤 썬더</h3>
-              </div>
-            </div>
-            <p>“신을 죽이는 자, 신이 상대한다!” 슈퍼 히어로 시
-              절이여, 안녕! 이너피스를 위해 자아 찾기 여정을 
-              떠난 천둥의 신 ‘토르’ 그러나, 우주의 모든 신</p>
-            <a href="#" class="more">상세보기</a>
-          </div>
-          <div class="new_movie-content">
-            <div class="new_movie-img_tit">
-              <img src="./images/new_2.png" alt="미니언즈2">
-              <div class="new_movie-tit">
-                <em>2022.07.20 개봉<span class="d_day">d-19</span></em>
-                <h3>미니언즈 2</h3>
-              </div>
-            </div>
-            <p>세계 최고의 슈퍼 악당을 꿈꾸는 미니보스 ‘그루’와 그를 따라다니는 미니언들. 어느 날 그루는 최고의 악당 조직 ‘빌런6’의 마법 스톤을 훔치는데 성공하지만 뉴페이스 미니언 ‘오토’의 실수로 스톤을 잃어... 버리고 빌런6에게 납치까지 당한</p>
-            <a href="#" class="more">상세보기</a>
-          </div>
-          
+      </section>
+      <!-- 상영예정작 -->
+      <section id="new_movie">
+        <div class="main-title">
+          <h2>상영예정작</h2>
+          <p>새로 함께하는 영화들을 만나보세요</p>
         </div>
-        <div class="slide-arrow">
-          <div class="slide-prev prevBtn"><span class="blind">이전</span></div>
-          <div class="slide-next nextBtn"><span class="blind">다음</span></div>
+        <div class="new_movie-wrap">
+          <div class="new_movie-container" data-position="0">
+            <div class="new_movie-content">
+              <div class="new_movie-img_tit">
+                <img src="./images/new_1.png" alt="토르: 러브 앤 썬더" />
+                <div class="new_movie-tit">
+                  <em>2022.07.06 개봉<span class="d_day">d-4</span></em>
+                  <h3>토르: 러브 앤 썬더</h3>
+                </div>
+              </div>
+              <p>
+                “신을 죽이는 자, 신이 상대한다!” 슈퍼 히어로 시 절이여, 안녕!
+                이너피스를 위해 자아 찾기 여정을 떠난 천둥의 신 ‘토르’ 그러나,
+                우주의 모든 신
+              </p>
+              <a href="#" class="more">상세보기</a>
+            </div>
+            <div class="new_movie-content">
+              <div class="new_movie-img_tit">
+                <img src="./images/new_2.png" alt="미니언즈2" />
+                <div class="new_movie-tit">
+                  <em>2022.07.20 개봉<span class="d_day">d-19</span></em>
+                  <h3>미니언즈 2</h3>
+                </div>
+              </div>
+              <p>
+                세계 최고의 슈퍼 악당을 꿈꾸는 미니보스 ‘그루’와 그를 따라다니는
+                미니언들. 어느 날 그루는 최고의 악당 조직 ‘빌런6’의 마법 스톤을
+                훔치는데 성공하지만 뉴페이스 미니언 ‘오토’의 실수로 스톤을
+                잃어... 버리고 빌런6에게 납치까지 당한
+              </p>
+              <a href="#" class="more">상세보기</a>
+            </div>
+            <div class="new_movie-content">
+              <div class="new_movie-img_tit">
+                <img src="./images/new_3.png" alt="한산: 용의 출현" />
+                <div class="new_movie-tit">
+                  <em>2022.07.27 개봉<span class="d_day">d-26</span></em>
+                  <h3>한산: 용의 출현</h3>
+                </div>
+              </div>
+              <p>
+                나라의 운명을 바꿀 압도적 승리의 전투가 시작된다! 1592년 4월,
+                조선은 임진왜란 발발 후 단 15일만에 왜군에 한양을 빼앗기며
+                절체절명의 위기에 놓인다.
+              </p>
+              <a href="#" class="more">상세보기</a>
+            </div>
+            <div class="new_movie-content">
+              <div class="new_movie-img_tit">
+                <img src="./images/new_4.png" alt="토르: 러브 앤 썬더" />
+                <div class="new_movie-tit">
+                  <em>2022.07.20 개봉<span class="d_day">d-8</span></em>
+                  <h3>외계+인 1부</h3>
+                </div>
+              </div>
+              <p>
+                2022년 현재, ‘가드’(김우빈)’와 ‘썬더’는 인간의 몸에 가두어진
+                외계인 죄수를 관리하며 지구에 살고 있다. 어느 날, 서울 상공에
+                우주선이 나타나고 형사 ‘문도석’(소지섭)은 기이한 광경을 목격하게
+                되는데..
+              </p>
+              <a href="#" class="more">상세보기</a>
+            </div>
+            <div class="new_movie-content">
+              <div class="new_movie-img_tit">
+                <img src="./images/new_5.png" alt="미니언즈2" />
+                <div class="new_movie-tit">
+                  <em>2022.06.08 개봉<span class="d_day">d-1</span></em>
+                  <h3>브로커</h3>
+                </div>
+              </div>
+              <p>
+                세탁소를 운영하지만 늘 빚에 시달리는 ‘상현’(송강호)과 베이비
+                박스 시설에서 일하는 보육원 출신의 ‘동수’(강동원). 거센 비가
+                내리는 어느 날 밤, 그들은 베이비 박스에 놓인 한 아기를 몰래
+                데려간다
+              </p>
+              <a href="#" class="more">상세보기</a>
+            </div>
+          </div>
+          <div class="slide-arrow">
+            <div class="slide-prev prevBtn">
+              <span class="blind">이전</span>
+            </div>
+            <div class="slide-next nextBtn">
+              <span class="blind">다음</span>
+            </div>
+          </div>
+          <ul class="main-pagination">
+            <li></li>
+            <li></li>
+          </ul>
         </div>
-        <ul class="main-pagination">
-          <li></li>
-          <li></li>
+      </section>
+      <!-- frends -->
+      <section id="friends">
+        <div class="friends-container">
+          <h2>friends</h2>
+          <p>
+            분기마다 쉽고 빠르게 Level-Up!
+            <span class="block">롯데시네마 Friends 되고,</span>
+            <span class="block">VIP의 풍성한 혜택을 만나보세요.</span>
+          </p>
+          <a href="#" class="ghost_btn">혜택 보러가기</a>
+        </div>
+      </section>
+      <!-- event -->
+      <section id="event">
+        <div class="main-title">
+          <h2>event</h2>
+          <p>롯데시네마의 다양한 이벤트</p>
+        </div>
+        <div class="event-wrap">
+          <div class="event-container" data-position="0">
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_1.png" alt="event1" />
+                </div>
+                <em>영화</em>
+                <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
+                <p>2022.06.22 ~ 2022.07.13</p>
+              </a>
+            </div>
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_2.png" alt="event2" />
+                </div>
+                <em>HOT</em>
+                <h3>아티스트 토크 셰퍼드 페어리</h3>
+                <p>2022.06.22 ~ 2022.07.31</p>
+              </a>
+            </div>
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_3.png" alt="event3" />
+                </div>
+                <em>제휴할인</em>
+                <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
+                <p>2022.06.01 ~ 2022.07.31</p>
+              </a>
+            </div>
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_1.png" alt="event1" />
+                </div>
+                <em>영화</em>
+                <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
+                <p>2022.06.22 ~ 2022.07.13</p>
+              </a>
+            </div>
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_2.png" alt="event2" />
+                </div>
+                <em>HOT</em>
+                <h3>아티스트 토크 셰퍼드 페어리</h3>
+                <p>2022.06.22 ~ 2022.07.31</p>
+              </a>
+            </div>
+            <div class="event-content">
+              <a href="#">
+                <div class="event-img_box">
+                  <img src="./images/event_3.png" alt="event3" />
+                </div>
+                <em>제휴할인</em>
+                <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
+                <p>2022.06.01 ~ 2022.07.31</p>
+              </a>
+            </div>
+          </div>
+          <div class="slide-arrow">
+            <div class="slide-prev prevBtn">
+              <span class="blind">이전</span>
+            </div>
+            <div class="slide-next nextBtn">
+              <span class="blind">다음</span>
+            </div>
+          </div>
+          <ul class="main-pagination">
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <!-- 스페셜관 -->
+      <section id="special">
+        <div class="main-title">
+          <h2>special theater</h2>
+          <p>영화의 순간을 더욱 특별하게</p>
+        </div>
+        <!-- grid logo -->
+        <ul class="special-grid">
+          <li>
+            <a href="#"
+              ><img src="./images/special_charlotte.png" alt="샤롯데"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_colorium.png" alt="colorium"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_super4d.png" alt="super4d"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_superplaex.png" alt="superplaex"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_superplex_g.png" alt="superplaex_g"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_supers.png" alt="supers"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_cinebiz_97.png" alt="cinebiz"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_cinecomfort.png" alt="cinecomfort"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_cinesalon.png" alt="cinesalon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_cinecouple.png" alt="cinecouple"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/special_cinefamily.png" alt="cinefamily"
+            /></a>
+          </li>
+          <!-- <li><a href="#none"></a></li> -->
         </ul>
-      </div>
-    </section>
-    <!-- frends -->
-    <section id="friends">
-      <div class="friends-container">
-        <h2>friends</h2>
-        <p>분기마다 쉽고 빠르게 Level-Up! 
-          <span class="block">롯데시네마 Friends 되고,</span>
-          <span class="block">VIP의 풍성한 혜택을 만나보세요.</span>
-        </p>
-        <a href="#" class="ghost_btn">혜택 보러가기</a>
-      </div>
-    </section>
-    <!-- event -->
-    <section id="event">
-      <div class="main-title">
-        <h2>event</h2>
-        <p>롯데시네마의 다양한 이벤트</p>
-      </div>
-      <div class="event-wrap">
-        <div class="event-container" data-position="0">
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_1.png" alt="event1">
-              </div>
-              <em>영화</em>
-              <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
-              <p>2022.06.22 ~ 2022.07.13</p>
-            </a>
-          </div>
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_2.png" alt="event2">
-              </div>
-              <em>HOT</em>
-              <h3>아티스트 토크 셰퍼드 페어리</h3>
-              <p>2022.06.22 ~ 2022.07.31</p>
-            </a>
-          </div>
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_3.png" alt="event3">
-              </div>
-              <em>제휴할인</em>
-              <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
-              <p>2022.06.01 ~ 2022.07.31</p>
-            </a>
-          </div>
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_1.png" alt="event1">
-              </div>
-              <em>영화</em>
-              <h3>'탑건:매버릭' 스페셜 포스터 이벤트</h3>
-              <p>2022.06.22 ~ 2022.07.13</p>
-            </a>
-          </div>
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_2.png" alt="event2">
-              </div>
-              <em>HOT</em>
-              <h3>아티스트 토크 셰퍼드 페어리</h3>
-              <p>2022.06.22 ~ 2022.07.31</p>
-            </a>
-          </div>
-          <div class="event-content">
-            <a href="#">
-              <div class="event-img_box">
-                <img src="./images/event_3.png" alt="event3">
-              </div>
-              <em>제휴할인</em>
-              <h3>토스로 영화 예매하고 지금 바로 캐...</h3>
-              <p>2022.06.01 ~ 2022.07.31</p>
-            </a>
-          </div>
-        </div>
-        <div class="slide-arrow">
-          <div class="slide-prev prevBtn"><span class="blind">이전</span></div>
-          <div class="slide-next nextBtn"><span class="blind">다음</span></div>
-        </div>
-        <ul class="main-pagination">
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
-    <!-- 스페셜관 -->
-    <section id="special">
-      <div class="main-title">
-        <h2>special theater</h2>
-        <p>영화의 순간을 더욱 특별하게</p>
-      </div>
-      <!-- grid logo -->
-      <ul class="special-grid">
-        <li><a href="#"><img src="./images/special_charlotte.png" alt="샤롯데"></a></li>
-        <li><a href="#"><img src="./images/special_colorium.png" alt="colorium"></a></li>
-        <li><a href="#"><img src="./images/special_super4d.png" alt="super4d"></a></li>
-        <li><a href="#"><img src="./images/special_superplaex.png" alt="superplaex"></a></li>
-        <li><a href="#"><img src="./images/special_superplex_g.png" alt="superplaex_g"></a></li>
-        <li><a href="#"><img src="./images/special_supers.png" alt="supers"></a></li>
-        <li><a href="#"><img src="./images/special_cinebiz_97.png" alt="cinebiz"></a></li>
-        <li><a href="#"><img src="./images/special_cinecomfort.png" alt="cinecomfort"></a></li>
-        <li><a href="#"><img src="./images/special_cinesalon.png" alt="cinesalon"></a></li>
-        <li><a href="#"><img src="./images/special_cinecouple.png" alt="cinecouple"></a></li>
-        <li><a href="#"><img src="./images/special_cinefamily.png" alt="cinefamily"></a></li>
-        <!-- <li><a href="#none"></a></li> -->
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <ul class="footer-info">
+        <li><a href="#">회원약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li class="m_none">
+          <a href="#">영상정보처리기기 운영 및 관리방침</a>
+        </li>
+        <li class="m_none"><a href="#">L.POINT회원안내</a></li>
+        <li class="block m_none">
+          <span><a href="#">배정기준</a></span>
+          <span><a href="#">채용안내</a></span>
+          <span><a href="#">광고/임대문의</a></span>
+          <span><a href="#">윤리경영</a></span>
+        </li>
+        <li><a href="#">기업정보</a></li>
       </ul>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer>
-    <ul class="footer-info">
-      <li><a href="#">회원약관</a></li>
-      <li><a href="#">개인정보처리방침</a></li>
-      <li><a href="#">이메일무단수집거부</a></li>
-      <li class="m_none"><a href="#">영상정보처리기기 운영 및 관리방침</a></li>
-      <li class="m_none"><a href="#">L.POINT회원안내</a></li>
-      <li class="block m_none">
-        <span><a href="#">배정기준</a></span>
-        <span><a href="#">채용안내</a></span>
-        <span><a href="#">광고/임대문의</a></span>
-        <span><a href="#">윤리경영</a></span>
-      </li>
-      <li><a href="#">기업정보</a></li>
-    </ul>
-    <ul class="footer-address">
-      <li>
-        <span class="line line-none">서울특별시 송파구 올림픽로 300 롯데월드타워 27층</span>
-        <span>고객센터 1544-8855</span>
-      </li>
-      <li>
-        <p>
-          <span class="line">대표이사 최병환</span>
-          <span class="line line-none">사업자등록번호 313-87-00979</span>
-        </p>
-        <p>
-          <span class="line">통신판매업신고번호 제1184호</span>
-          <span>개인정보 보호 최고 책임자 김무성</span>
-        </p>
-      </li>
-    </ul>
-    <p>copyright&copy; lotte cinema all right reserved</p>
-  </footer>
-  <!-- go to up -->
-  <button id="goToTop"><span class="blind">위로</span></button>
-  <!-- script -->
-  <script src="./js/slider.js"></script>
-  <script src="./js/basic.js"></script>
-  <script src="./js/main.js"></script>
-</body>
+      <ul class="footer-address">
+        <li>
+          <span class="line line-none"
+            >서울특별시 송파구 올림픽로 300 롯데월드타워 27층</span
+          >
+          <span>고객센터 1544-8855</span>
+        </li>
+        <li>
+          <p>
+            <span class="line">대표이사 최병환</span>
+            <span class="line line-none">사업자등록번호 313-87-00979</span>
+          </p>
+          <p>
+            <span class="line">통신판매업신고번호 제1184호</span>
+            <span>개인정보 보호 최고 책임자 김무성</span>
+          </p>
+        </li>
+      </ul>
+      <p>copyright&copy; lotte cinema all right reserved</p>
+    </footer>
+    <!-- go to up -->
+    <button id="goToTop"><span class="blind">위로</span></button>
+    <!-- script -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/basic.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
